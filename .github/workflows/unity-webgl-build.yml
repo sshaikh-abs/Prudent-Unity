@@ -26,7 +26,7 @@ jobs:
       - name: Zip WebGL Build
         run: >
           Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\Local\*" 
-          -DestinationPath "C:\Unityprojects\abs-unity\Builds\WebGLBuild.zip" -Force
+          -DestinationPath "C:\Unityprojects\abs-unity\WebGLBuild.zip" -Force
 
       # Step 4: Upload the zipped WebGL Build as artifact
       - name: Upload WebGL Build Zip
