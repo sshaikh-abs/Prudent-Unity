@@ -18,20 +18,19 @@ jobs:
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
           -quit -batchmode -nographics
-          -projectPath "C:\Unity Projects\abs-unity"
+          -projectPath "C:\Unityprojects\abs-unity"
           -executeMethod BuildScript.BuildWebGLLocal
-          -logFile "C:\Unity Projects\abs-unity\build.log"
+          -logFile "C:\Unityprojects\abs-unity\build.log"
 
       # Step 3: Zip the WebGL Build folder
       - name: Zip WebGL Build
         run: >
-          Compress-Archive -Path "C:\Unity Projects\abs-unity\Builds\Local\*" 
-          -DestinationPath "C:\Unity Projects\abs-unity\Builds\WebGLBuild.zip" -Force
+          Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\Local\*" 
+          -DestinationPath "C:\Unityprojects\abs-unity\Builds\WebGLBuild.zip" -Force
 
       # Step 4: Upload the zipped WebGL Build as artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild
-          path: "C:\\Unity Projects\\abs-unity\\WebGLBuild.zip"
-
+          path: "C:\\Unityprojects\\abs-unity\\WebGLBuild.zip"
