@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7982799e330b34e4e96a2ad34255293b, type: 3}
+  m_Name: CommandDatabase
+  m_EditorClassIdentifier: 
+  blobLoadCommands:
+  - {fileID: 11400000, guid: f471437878aa6d2448f2910fb9e5164d, type: 2}
+  - {fileID: 11400000, guid: 9a4f38bbd956b774cba5bfe33cd9db10, type: 2}
+  - {fileID: 11400000, guid: 8106bd523482cdf47a32f53fef9f73a2, type: 2}
+  - {fileID: 11400000, guid: f571df902967905438e2d49da0847cbf, type: 2}
+  localLoadCommands:
+  - {fileID: 11400000, guid: 13bfdfca985c48445972a292f2efc69c, type: 2}
+  - {fileID: 11400000, guid: b9c43f1434ef66246a2a15080502b2ba, type: 2}
+  - {fileID: 11400000, guid: a520161f78c467840a1bcee2adeea632, type: 2}
+  - {fileID: 11400000, guid: ed83de7646c416747bc76270dfdec038, type: 2}
+  - {fileID: 11400000, guid: 2eff1494407813b4c94141b2c2256704, type: 2}
+  - {fileID: 11400000, guid: ed8362758b68bbd4eab0310c6b77dbeb, type: 2}
+  command: Test Fpso Local
+  jsonOutputFoldout: 1

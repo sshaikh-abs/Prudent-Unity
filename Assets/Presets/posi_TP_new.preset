@@ -1,0 +1,965 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: posi_TP_new
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e177b631e36bd774bb5f5a7e5e5c3f6c,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bypassNetwork
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: offlineModelAddress
+    value: C:/Projects/Unity/abs-unity/Assets/Imports/Models/TEST_FPSO.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: materialToApply
+    value: 
+    objectReference: {fileID: 2100000, guid: e12de86a37dc44148862c5fa3ba9b628, type: 2}
+  - target: {fileID: 0}
+    propertyPath: options.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[0]'
+    value: TEST_FPSO_STRUCTURAL
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[1]'
+    value: TEST_FPSO_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[2]'
+    value: PETROBRAS_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[3]'
+    value: OLD_COMPARTMENT_TESTFPSO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[4]'
+    value: PAN_ASIA
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.compartment
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/TEST_FPSO_COMP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.shell
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/TEST_FPSO_SHELL.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.vesselId
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.size
+    value: 29
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].compartmentName
+    value: AFT_PEAK_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].uid
+    value: 14049918
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/AFT_PEAK_TANK_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].compartmentName
+    value: CARGO_TANK_01_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].uid
+    value: 14044360
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_01_C_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].compartmentName
+    value: CARGO_TANK_01_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].uid
+    value: 13988710
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_01_P_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].compartmentName
+    value: CARGO_TANK_01_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].uid
+    value: 14045566
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_01_S_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].compartmentName
+    value: CARGO_TANK_02_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].uid
+    value: 14017224
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_02_C_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].compartmentName
+    value: CARGO_TANK_02_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].uid
+    value: 14040232
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_02_P_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].compartmentName
+    value: CARGO_TANK_02_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].uid
+    value: 14042669
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_02_S_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].compartmentName
+    value: CARGO_TANK_03_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].uid
+    value: 13923794
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_03_C_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].compartmentName
+    value: CARGO_TANK_03_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].uid
+    value: 14037519
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_03_P_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].compartmentName
+    value: CARGO_TANK_03_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].uid
+    value: 14016069
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_03_S_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].compartmentName
+    value: CARGO_TANK_04_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].uid
+    value: 13943969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_04_C_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].compartmentName
+    value: CARGO_TANK_04_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].uid
+    value: 14043909
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_04_P_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].compartmentName
+    value: CARGO_TANK_04_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].uid
+    value: 13969120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_04_S_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].compartmentName
+    value: CARGO_TANK_05_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].uid
+    value: 13860020
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_05_C_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].compartmentName
+    value: CARGO_TANK_05_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].uid
+    value: 13856960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_05_P_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].compartmentName
+    value: CARGO_TANK_05_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].uid
+    value: 13892821
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/CARGO_TANK_05_S_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].compartmentName
+    value: ENGINE_ROOM_DECK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].uid
+    value: 14216394
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/ENGINE_ROOM_DECK_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].compartmentName
+    value: FORE_PEAK_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].uid
+    value: 13878122
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/FORE_PEAK_TANK_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].compartmentName
+    value: FWD_DEEP_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].uid
+    value: 13930352
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/FWD_DEEP_VOID_SPACE_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].compartmentName
+    value: PUMP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].uid
+    value: 13355240
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/PUMP_ROOM_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].compartmentName
+    value: PUMP_ROOM_TRUNK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].uid
+    value: 13369562
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/PUMP_ROOM_TRUNK_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].compartmentName
+    value: SLOP_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].uid
+    value: 13906445
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/SLOP_TANK_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].compartmentName
+    value: STEERING_GEAR_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].uid
+    value: 16741282
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/STEERING_GEAR_ROOM_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].compartmentName
+    value: STERN_TB_COOLING_WAT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].uid
+    value: 13844616
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/STERN_TB_COOLING_WAT_TA_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].compartmentName
+    value: STORAGE_SPACES_FWD_BO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].uid
+    value: 13385086
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/STORAGE_SPACES_FWD_BO_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].compartmentName
+    value: DISTILLED_WATER_TANK_PI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].uid
+    value: 13940327
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/DISTILLED_WATER_TANK_PI_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].compartmentName
+    value: DISTILLED_WATER_TANK_SI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].uid
+    value: 13935595
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/DISTILLED_WATER_TANK_SI_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].compartmentName
+    value: POTABLE_WATER_TANK_PI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].uid
+    value: 13926391
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/POTABLE_WATER_TANK_PI_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].compartmentName
+    value: POTABLE_WATER_TANK_SI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].uid
+    value: 13933967
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Plates/POTABLE_WATER_TANK_SI_Plates.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.size
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].compartmentName
+    value: CARGO_TANK_01_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].uid
+    value: 14044360
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_01_C_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].compartmentName
+    value: CARGO_TANK_01_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].uid
+    value: 13988710
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_01_P_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].compartmentName
+    value: CARGO_TANK_01_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].uid
+    value: 14045566
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_01_S_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].compartmentName
+    value: CARGO_TANK_02_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].uid
+    value: 14017224
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_02_C_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].compartmentName
+    value: CARGO_TANK_02_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].uid
+    value: 14040232
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_02_P_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].compartmentName
+    value: CARGO_TANK_02_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].uid
+    value: 14042669
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_02_S_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].compartmentName
+    value: CARGO_TANK_03_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].uid
+    value: 13923794
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_03_C_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].compartmentName
+    value: CARGO_TANK_03_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].uid
+    value: 14037519
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_03_P_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].compartmentName
+    value: CARGO_TANK_03_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].uid
+    value: 14016069
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_03_S_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].compartmentName
+    value: CARGO_TANK_04_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].uid
+    value: 13943969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_04_C_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].compartmentName
+    value: CARGO_TANK_04_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].uid
+    value: 14043909
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_04_P_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].compartmentName
+    value: CARGO_TANK_04_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].uid
+    value: 13969120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/CARGO_TANK_04_S_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].compartmentName
+    value: FORE_PEAK_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].uid
+    value: 13878122
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/FORE_PEAK_TANK_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].compartmentName
+    value: FWD_DEEP_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].uid
+    value: 13930352
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/FWD_DEEP_VOID_SPACE_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].compartmentName
+    value: STORAGE_SPACES_FWD
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].uid
+    value: 13385086
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].link
+    value: D:/Posibabu/GlbModels/TEST_FPSO_NEW/Brackets/STORAGE_SPACES_FWD_BO_Bracket.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.size
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].compartmentName
+    value: AFT_PEAK_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].uid
+    value: 14049918
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/AFT_PEAK_TANK_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].compartmentName
+    value: CARGO_TANK_01_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].uid
+    value: 14044360
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_01_C_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].compartmentName
+    value: CARGO_TANK_01_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].uid
+    value: 13988710
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_01_P_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].compartmentName
+    value: CARGO_TANK_01_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].uid
+    value: 14045566
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_01_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].compartmentName
+    value: CARGO_TANK_02_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].uid
+    value: 14017224
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_02_C_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].compartmentName
+    value: CARGO_TANK_02_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].uid
+    value: 14040232
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_02_P_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].compartmentName
+    value: CARGO_TANK_02_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].uid
+    value: 14042669
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_02_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].compartmentName
+    value: CARGO_TANK_03_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].uid
+    value: 13923794
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_03_C_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].compartmentName
+    value: CARGO_TANK_03_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].uid
+    value: 14037519
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_03_P_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].compartmentName
+    value: CARGO_TANK_03_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].uid
+    value: 14016069
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_03_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].compartmentName
+    value: CARGO_TANK_04_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].uid
+    value: 13943969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_04_C_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].compartmentName
+    value: CARGO_TANK_04_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].uid
+    value: 14043909
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_04_P_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].compartmentName
+    value: CARGO_TANK_04_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].uid
+    value: 13969120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_04_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].compartmentName
+    value: CARGO_TANK_05_C
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].uid
+    value: 13860020
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_05_C_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].compartmentName
+    value: CARGO_TANK_05_P
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].uid
+    value: 13856960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_05_P_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].compartmentName
+    value: CARGO_TANK_05_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].uid
+    value: 13892821
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/CARGO_TANK_05_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].compartmentName
+    value: DISTILLED_WATER_TANK_PI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].uid
+    value: 13940327
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/DISTILLED_WATER_TANK_PI_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].compartmentName
+    value: DISTILLED_WATER_TANK_SI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].uid
+    value: 13935595
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/DISTILLED_WATER_TANK_SI_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].compartmentName
+    value: ENGINE_ROOM_DECK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].uid
+    value: 14216394
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/ENGINE_ROOM_DECK_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].compartmentName
+    value: FORE_PEAK_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].uid
+    value: 13878122
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/FORE_PEAK_TANK_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].compartmentName
+    value: FWD_DEEP_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].uid
+    value: 13930352
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/FWD_DEEP_VOID_SPACE_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].compartmentName
+    value: POTABLE_WATER_TANK_PI
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].uid
+    value: 13926391
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/POTABLE_WATER_TANK_PI_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].compartmentName
+    value: POTABLE_WATER_TANK_S
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].uid
+    value: 13933967
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/POTABLE_WATER_TANK_S_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].compartmentName
+    value: PUMP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].uid
+    value: 13355240
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/PUMP_ROOM_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].compartmentName
+    value: PUMP_ROOM_TRUNK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].uid
+    value: 13369562
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/PUMP_ROOM_TRUNK_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].compartmentName
+    value: SLOP_TANK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].uid
+    value: 13906445
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/SLOP_TANK_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].compartmentName
+    value: STEERING_GEAR_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].uid
+    value: 16741282
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/STEERING_GEAR_ROOM_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].compartmentName
+    value: STORAGE_SPACES_FWD_BO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].uid
+    value: 13385086
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].link
+    value: D:/Posibabu\GlbModels/TEST_FPSO_NEW/Stiffeners/STORAGE_SPACES_FWD_BO_Stiffener.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.vesselId
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.chunkLinks.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

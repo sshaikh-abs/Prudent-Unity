@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8074016d9349f408fbd8abc6b442d4, type: 3}
+  m_Name: Petrobras P74 Blob
+  m_EditorClassIdentifier: 
+  name: Petrobras P74 Blob
+  loadCommand:
+    compartment: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/PETROBRAS_COMP.glb
+    shell: 
+    vesselId: 1
+    plates:
+    - compartmentName: AFT_PEAK_TK
+      uid: C0000000976
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/AFT_PEAK_TK.glb
+    - compartmentName: AFT_STORE
+      uid: C0000000974
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/AFT_STORE.glb
+    - compartmentName: AFT_VOID_SPACE
+      uid: C0000000967
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/AFT_VOID_SPACE.glb
+    - compartmentName: BILGE_WATER_SETT_TK
+      uid: C0000000952
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/BILGE_WATER_SETT_TK.glb
+    - compartmentName: BOATSWAINS_STORE
+      uid: C0000000970
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/BOATSWAINS_STORE.glb
+    - compartmentName: CLEAN_SLOP_TK_SB
+      uid: C0000000951
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/CLEAN_SLOP_TK_SB.glb
+    - compartmentName: DIESEL_OIL_OVERFLOW_TK_PS
+      uid: C0000000942
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/DIESEL_OIL_OVERFLOW_TK_PS.glb
+    - compartmentName: DIRTY_SLOP_TK_PS
+      uid: C0000000943
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/DIRTY_SLOP_TK_PS.glb
+    - compartmentName: DIST_WATER_STOR_TK_PS
+      uid: C0000000982
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/DIST_WATER_STOR_TK_PS.glb
+    - compartmentName: DIST_WATER_STOR_TK_SB
+      uid: C0000000962
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/DIST_WATER_STOR_TK_SB.glb
+    - compartmentName: DOUBLE_BTM_ENGINE_VOID
+      uid: C0000000950
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/DOUBLE_BTM_ENGINE_VOID.glb
+    - compartmentName: ENGINE_ROOM
+      uid: C0000000984
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/ENGINE_ROOM.glb
+    - compartmentName: FORE_PEAK_TK
+      uid: C0000000959
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/FORE_PEAK_TK.glb
+    - compartmentName: FRESH_WATER_TK_PS
+      uid: C0000000979
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/FRESH_WATER_TK_PS.glb
+    - compartmentName: FRESH_WATER_TK_SB
+      uid: C0000000983
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/FRESH_WATER_TK_SB.glb
+    - compartmentName: NO_1_CENTRAL_CARGO_OIL_TK
+      uid: C0000000985
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_1_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_PS
+      uid: C0000000961
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_1_DIESEL_OIL_TK_PS.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_SB
+      uid: C0000000975
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_1_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_PS
+      uid: C0000000949
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_1_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_SB
+      uid: C0000000964
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_1_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_2_CENTRAL_CARGO_OIL_TK
+      uid: C0000000958
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_2_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_2_DIESEL_OIL_TK_SB
+      uid: C0000000966
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_2_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_2_DIESEL_OIL_TK_SERV_PS
+      uid: C0000000971
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_2_DIESEL_OIL_TK_SERV_PS.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_PS
+      uid: C0000000980
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_2_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_SB
+      uid: C0000000986
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_2_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_3_CENTRAL_CARGO_OIL_TK
+      uid: C0000000955
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_3_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO 3 WING CARGO OIL TK PS
+      uid: C0000000960
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_3_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_3_WING_CARGO_OIL_TK_SB
+      uid: C0000000968
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_3_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_4_CENTRAL_CARGO_OIL_TK
+      uid: C0000000947
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_4_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_PS
+      uid: C0000000957
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_4_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_SB
+      uid: C0000000946
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_4_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_5_CENTRAL_CARGO_OIL_TK
+      uid: C0000000981
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_5_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_PS
+      uid: C0000000963
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_5_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_SB
+      uid: C0000000944
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_5_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_6_CENTRAL_CARGO_OIL_TK
+      uid: C0000000954
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/NO_6_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: PAINTING_AND_SMALL_REPAIR
+      uid: C0000000945
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/PAINTING_AND_SMALL_REPAIR.glb
+    - compartmentName: PUMP_ROOM
+      uid: C0000000969
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/PUMP_ROOM.glb
+    - compartmentName: ROPE_STORE_PS
+      uid: C0000000978
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/ROPE_STORE_PS.glb
+    - compartmentName: ROPE_STORE_SB
+      uid: C0000000953
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/ROPE_STORE_SB.glb
+    - compartmentName: SLUDGE_TK_PS
+      uid: C0000000988
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/SLUDGE_TK_PS.glb
+    - compartmentName: WELDING_WORKSHOP
+      uid: C0000000977
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/WELDING_WORKSHOP.glb
+    - compartmentName: FWD_ELECTRICAL_PANEL_ROOM
+      uid: C0000000973
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/FWD_ELECTRICAL_PANEL_ROOM.glb
+    - compartmentName: HYDROLIC_DRAIN_TK
+      uid: C0000000965
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/HYDROLIC_DRAIN_TK.glb
+    - compartmentName: HYDROLIC_STOR_TK
+      uid: C0000000948
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/HYDROLIC_STOR_TK.glb
+    - compartmentName: EFP_ROOM
+      uid: C0000000972
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Plates/EFP_ROOM.glb
+    brackets:
+    - compartmentName: AFT_PEAK_TK
+      uid: C0000000976
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/AFT_PEAK_TK.glb
+    - compartmentName: CLEAN_SLOP_TK_SB
+      uid: C0000000951
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/CLEAN_SLOP_TK_SB.glb
+    - compartmentName: DIRTY_SLOP_TK_PS
+      uid: C0000000943
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/DIRTY_SLOP_TK_PS.glb
+    - compartmentName: ENGINE_ROOM
+      uid: C0000000984
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/ENGINE_ROOM.glb
+    - compartmentName: FORE_PEAK_TK
+      uid: C0000000959
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/FORE_PEAK_TK.glb
+    - compartmentName: NO_1_CENTRAL_CARGO_OIL_TK
+      uid: C0000000985
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_1_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_PS
+      uid: C0000000961
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_1_DIESEL_OIL_TK_PS.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_SB
+      uid: C0000000975
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_1_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_PS
+      uid: C0000000949
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_1_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_SB
+      uid: C0000000964
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_1_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_2_CENTRAL_CARGO_OIL_TK
+      uid: C0000000958
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_2_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_2_DIESEL_OIL_TK_SB
+      uid: C0000000966
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_2_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_PS
+      uid: C0000000980
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_2_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_SB
+      uid: C0000000986
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_2_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_3_CENTRAL_CARGO_OIL_TK
+      uid: C0000000955
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_3_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO 3 WING CARGO OIL TK PS
+      uid: C0000000960
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_3_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_3_WING_CARGO_OIL_TK_SB
+      uid: C0000000968
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_3_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_4_CENTRAL_CARGO_OIL_TK
+      uid: C0000000947
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_4_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_PS
+      uid: C0000000957
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_4_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_SB
+      uid: C0000000946
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_4_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_5_CENTRAL_CARGO_OIL_TK
+      uid: C0000000981
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_5_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_PS
+      uid: C0000000963
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_5_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_SB
+      uid: C0000000944
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_5_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_6_CENTRAL_CARGO_OIL_TK
+      uid: C0000000954
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/NO_6_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: ROPE_STORE_SB
+      uid: C0000000953
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/ROPE_STORE_SB.glb
+    - compartmentName: WELDING_WORKSHOP
+      uid: C0000000977
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Brackets/WELDING_WORKSHOP.glb
+    stiffeners:
+    - compartmentName: AFT_PEAK_TK
+      uid: C0000000976
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/AFT_PEAK_TK.glb
+    - compartmentName: AFT_STORE
+      uid: C0000000974
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/AFT_STORE.glb
+    - compartmentName: AFT_VOID_SPACE
+      uid: C0000000967
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/AFT_VOID_SPACE.glb
+    - compartmentName: BILGE_WATER_SETT_TK
+      uid: C0000000952
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/BILGE_WATER_SETT_TK.glb
+    - compartmentName: BOATSWAINS_STORE
+      uid: C0000000970
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/BOATSWAINS_STORE.glb
+    - compartmentName: CLEAN_SLOP_TK_SB
+      uid: C0000000951
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/CLEAN_SLOP_TK_SB.glb
+    - compartmentName: DIESEL_OIL_OVERFLOW_TK_PS
+      uid: C0000000942
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/DIESEL_OIL_OVERFLOW_TK_PS.glb
+    - compartmentName: DIRTY_SLOP_TK_PS
+      uid: C0000000943
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/DIRTY_SLOP_TK_PS.glb
+    - compartmentName: DIST_WATER_STOR_TK_PS
+      uid: C0000000982
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/DIST_WATER_STOR_TK_PS.glb
+    - compartmentName: DIST_WATER_STOR_TK_SB
+      uid: C0000000962
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/DIST_WATER_STOR_TK_SB.glb
+    - compartmentName: DOUBLE_BTM_ENGINE_VOID
+      uid: C0000000950
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/DOUBLE_BTM_ENGINE_VOID.glb
+    - compartmentName: ENGINE_ROOM
+      uid: C0000000984
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/ENGINE_ROOM.glb
+    - compartmentName: FORE_PEAK_TK
+      uid: C0000000959
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/FORE_PEAK_TK.glb
+    - compartmentName: FRESH_WATER_TK_PS
+      uid: C0000000979
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/FRESH_WATER_TK_PS.glb
+    - compartmentName: FRESH_WATER_TK_SB
+      uid: C0000000983
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/FRESH_WATER_TK_SB.glb
+    - compartmentName: NO_1_CENTRAL_CARGO_OIL_TK
+      uid: C0000000985
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_1_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_PS
+      uid: C0000000961
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_1_DIESEL_OIL_TK_PS.glb
+    - compartmentName: NO_1_DIESEL_OIL_TK_SB
+      uid: C0000000975
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_1_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_PS
+      uid: C0000000949
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_1_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_1_WING_CARGO_OIL_TK_SB
+      uid: C0000000964
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_1_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_2_CENTRAL_CARGO_OIL_TK
+      uid: C0000000958
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_2_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_2_DIESEL_OIL_TK_SB
+      uid: C0000000966
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_2_DIESEL_OIL_TK_SB.glb
+    - compartmentName: NO_2_DIESEL_OIL_TK_SERV_PS
+      uid: C0000000971
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_2_DIESEL_OIL_TK_SERV_PS.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_PS
+      uid: C0000000980
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_2_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_2_WING_WATER_BLT_TK_SB
+      uid: C0000000986
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_2_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_3_CENTRAL_CARGO_OIL_TK
+      uid: C0000000955
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_3_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO 3 WING CARGO OIL TK PS
+      uid: C0000000960
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_3_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_3_WING_CARGO_OIL_TK_SB
+      uid: C0000000968
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_3_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_4_CENTRAL_CARGO_OIL_TK
+      uid: C0000000947
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_4_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_PS
+      uid: C0000000957
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_4_WING_WATER_BLT_TK_PS.glb
+    - compartmentName: NO_4_WING_WATER_BLT_TK_SB
+      uid: C0000000946
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_4_WING_WATER_BLT_TK_SB.glb
+    - compartmentName: NO_5_CENTRAL_CARGO_OIL_TK
+      uid: C0000000981
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_5_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_PS
+      uid: C0000000963
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_5_WING_CARGO_OIL_TK_PS.glb
+    - compartmentName: NO_5_WING_CARGO_OIL_TK_SB
+      uid: C0000000944
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_5_WING_CARGO_OIL_TK_SB.glb
+    - compartmentName: NO_6_CENTRAL_CARGO_OIL_TK
+      uid: C0000000954
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/NO_6_CENTRAL_CARGO_OIL_TK.glb
+    - compartmentName: PAINTING_AND_SMALL_REPAIR
+      uid: C0000000945
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/PAINTING_AND_SMALL_REPAIR.glb
+    - compartmentName: ROPE_STORE_PS
+      uid: C0000000978
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/ROPE_STORE_PS.glb
+    - compartmentName: PUMP_ROOM
+      uid: C0000000969
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/PUMP_ROOM.glb
+    - compartmentName: ROPE_STORE_SB
+      uid: C0000000953
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/ROPE_STORE_SB.glb
+    - compartmentName: SLUDGE_TK_PS
+      uid: C0000000988
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/SLUDGE_TK_PS.glb
+    - compartmentName: WELDING_WORKSHOP
+      uid: C0000000977
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/WELDING_WORKSHOP.glb
+    - compartmentName: FWD_ELECTRICAL_PANEL_ROOM
+      uid: C0000000973
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/FWD_ELECTRICAL_PANEL_ROOM.glb
+    - compartmentName: HYDROLIC_DRAIN_TK
+      uid: C0000000965
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/HYDROLIC_DRAIN_TK.glb
+    - compartmentName: HYDROLIC_STOR_TK
+      uid: C0000000948
+      link: https://stf3ddev001.blob.core.windows.net/freedom3d/vessels/PETROBRAS/Stiffeners/HYDROLIC_STOR_TK.glb

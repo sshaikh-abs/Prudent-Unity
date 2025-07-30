@@ -1,0 +1,1733 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Final Loader Petrobras
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e177b631e36bd774bb5f5a7e5e5c3f6c,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bypassNetwork
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: offlineModelAddress
+    value: C:/Projects/Unity/abs-unity/Assets/Imports/Models/TEST_FPSO.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: materialToApply
+    value: 
+    objectReference: {fileID: 2100000, guid: e12de86a37dc44148862c5fa3ba9b628, type: 2}
+  - target: {fileID: 0}
+    propertyPath: options.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[0]'
+    value: TEST_FPSO_STRUCTURAL
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[1]'
+    value: TEST_FPSO_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[2]'
+    value: PETROBRAS_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[3]'
+    value: OLD_COMPARTMENT_TESTFPSO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[4]'
+    value: PAN_ASIA
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.compartment
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\PETROBRAS_COMP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.shell
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.vesselId
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.size
+    value: 45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].compartmentName
+    value: AFT_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].uid
+    value: C0000000976
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].compartmentName
+    value: AFT_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].uid
+    value: C0000000974
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].compartmentName
+    value: AFT_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].uid
+    value: C0000000967
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_VOID_SPACE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].compartmentName
+    value: BILGE_WATER_SETT_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].uid
+    value: C0000000952
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\BILGE_WATER_SETT_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].compartmentName
+    value: BOATSWAINS_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].uid
+    value: C0000000970
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\BOATSWAINS_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].compartmentName
+    value: CLEAN_SLOP_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].uid
+    value: C0000000951
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\CLEAN_SLOP_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].compartmentName
+    value: DIESEL_OIL_OVERFLOW_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].uid
+    value: C0000000942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIESEL_OIL_OVERFLOW_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].compartmentName
+    value: DIRTY_SLOP_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].uid
+    value: C0000000943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIRTY_SLOP_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].compartmentName
+    value: DIST_WATER_STOR_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].uid
+    value: C0000000982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIST_WATER_STOR_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].compartmentName
+    value: DIST_WATER_STOR_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].uid
+    value: C0000000962
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIST_WATER_STOR_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].compartmentName
+    value: DOUBLE_BTM_ENGINE_VOID
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].uid
+    value: C0000000950
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DOUBLE_BTM_ENGINE_VOID.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].compartmentName
+    value: ENGINE_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].uid
+    value: C0000000984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ENGINE_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].compartmentName
+    value: FORE_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].uid
+    value: C0000000959
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FORE_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].compartmentName
+    value: FRESH_WATER_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].uid
+    value: C0000000979
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FRESH_WATER_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].compartmentName
+    value: FRESH_WATER_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].uid
+    value: C0000000983
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FRESH_WATER_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].compartmentName
+    value: NO_1_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].uid
+    value: C0000000985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].compartmentName
+    value: NO_1_DIESEL_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].uid
+    value: C0000000961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_DIESEL_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].compartmentName
+    value: NO_1_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].uid
+    value: C0000000975
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].uid
+    value: C0000000949
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].uid
+    value: C0000000964
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].compartmentName
+    value: NO_2_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].uid
+    value: C0000000958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].uid
+    value: C0000000966
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SERV_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].uid
+    value: C0000000971
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_DIESEL_OIL_TK_SERV_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].uid
+    value: C0000000980
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].uid
+    value: C0000000986
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].compartmentName
+    value: NO_3_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].uid
+    value: C0000000955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].compartmentName
+    value: NO 3 WING CARGO OIL TK PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].uid
+    value: C0000000960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].compartmentName
+    value: NO_3_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].uid
+    value: C0000000968
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].compartmentName
+    value: NO_4_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].uid
+    value: C0000000947
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].uid
+    value: C0000000957
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].uid
+    value: C0000000946
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].compartmentName
+    value: NO_5_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].uid
+    value: C0000000981
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].uid
+    value: C0000000963
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].uid
+    value: C0000000944
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].compartmentName
+    value: NO_6_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].uid
+    value: C0000000954
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_6_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].compartmentName
+    value: PAINTING_AND_SMALL_REPAIR
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].uid
+    value: C0000000945
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\PAINTING_AND_SMALL_REPAIR.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].compartmentName
+    value: PUMP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].uid
+    value: C0000000969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\PUMP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].compartmentName
+    value: ROPE_STORE_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].uid
+    value: C0000000978
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ROPE_STORE_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].compartmentName
+    value: ROPE_STORE_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].uid
+    value: C0000000953
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ROPE_STORE_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].compartmentName
+    value: SLUDGE_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].uid
+    value: C0000000988
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\SLUDGE_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].compartmentName
+    value: WELDING_WORKSHOP
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].uid
+    value: C0000000977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\WELDING_WORKSHOP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[41].compartmentName
+    value: FWD_ELECTRICAL_PANEL_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[41].uid
+    value: C0000000973
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[41].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FWD_ELECTRICAL_PANEL_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[42].compartmentName
+    value: HYDROLIC_DRAIN_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[42].uid
+    value: C0000000965
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[42].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\HYDROLIC_DRAIN_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[43].compartmentName
+    value: HYDROLIC_STOR_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[43].uid
+    value: C0000000948
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[43].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\HYDROLIC_STOR_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[44].compartmentName
+    value: EFP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[44].uid
+    value: C0000000972
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[44].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\EFP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.size
+    value: 26
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].compartmentName
+    value: AFT_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].uid
+    value: C0000000976
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[0].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\AFT_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].compartmentName
+    value: CLEAN_SLOP_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].uid
+    value: C0000000951
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[1].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\CLEAN_SLOP_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].compartmentName
+    value: DIRTY_SLOP_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].uid
+    value: C0000000943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[2].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\DIRTY_SLOP_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].compartmentName
+    value: ENGINE_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].uid
+    value: C0000000984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[3].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\ENGINE_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].compartmentName
+    value: FORE_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].uid
+    value: C0000000959
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[4].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\FORE_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].compartmentName
+    value: NO_1_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].uid
+    value: C0000000985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[5].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_1_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].compartmentName
+    value: NO_1_DIESEL_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].uid
+    value: C0000000961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[6].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_1_DIESEL_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].compartmentName
+    value: NO_1_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].uid
+    value: C0000000975
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[7].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_1_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].uid
+    value: C0000000949
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[8].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_1_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].uid
+    value: C0000000964
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[9].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_1_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].compartmentName
+    value: NO_2_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].uid
+    value: C0000000958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[10].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_2_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].uid
+    value: C0000000966
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[11].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_2_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].uid
+    value: C0000000980
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[12].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_2_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].uid
+    value: C0000000986
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[13].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_2_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].compartmentName
+    value: NO_3_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].uid
+    value: C0000000955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[14].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_3_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[15].compartmentName
+    value: NO 3 WING CARGO OIL TK PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[15].uid
+    value: C0000000960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[15].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_3_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[16].compartmentName
+    value: NO_3_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[16].uid
+    value: C0000000968
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[16].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_3_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[17].compartmentName
+    value: NO_4_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[17].uid
+    value: C0000000947
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[17].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_4_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[18].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[18].uid
+    value: C0000000957
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[18].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_4_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[19].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[19].uid
+    value: C0000000946
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[19].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_4_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[20].compartmentName
+    value: NO_5_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[20].uid
+    value: C0000000981
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[20].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_5_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[21].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[21].uid
+    value: C0000000963
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[21].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_5_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[22].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[22].uid
+    value: C0000000944
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[22].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_5_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[23].compartmentName
+    value: NO_6_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[23].uid
+    value: C0000000954
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[23].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\NO_6_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[24].compartmentName
+    value: ROPE_STORE_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[24].uid
+    value: C0000000953
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[24].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\ROPE_STORE_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[25].compartmentName
+    value: WELDING_WORKSHOP
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[25].uid
+    value: C0000000977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.data[25].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Brackets\WELDING_WORKSHOP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.size
+    value: 45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].compartmentName
+    value: AFT_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].uid
+    value: C0000000976
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[0].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\AFT_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].compartmentName
+    value: AFT_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].uid
+    value: C0000000974
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[1].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\AFT_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].compartmentName
+    value: AFT_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].uid
+    value: C0000000967
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[2].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\AFT_VOID_SPACE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].compartmentName
+    value: BILGE_WATER_SETT_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].uid
+    value: C0000000952
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[3].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\BILGE_WATER_SETT_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].compartmentName
+    value: BOATSWAINS_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].uid
+    value: C0000000970
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[4].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\BOATSWAINS_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].compartmentName
+    value: CLEAN_SLOP_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].uid
+    value: C0000000951
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[5].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\CLEAN_SLOP_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].compartmentName
+    value: DIESEL_OIL_OVERFLOW_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].uid
+    value: C0000000942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[6].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\DIESEL_OIL_OVERFLOW_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].compartmentName
+    value: DIRTY_SLOP_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].uid
+    value: C0000000943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[7].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\DIRTY_SLOP_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].compartmentName
+    value: DIST_WATER_STOR_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].uid
+    value: C0000000982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[8].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\DIST_WATER_STOR_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].compartmentName
+    value: DIST_WATER_STOR_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].uid
+    value: C0000000962
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[9].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\DIST_WATER_STOR_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].compartmentName
+    value: DOUBLE_BTM_ENGINE_VOID
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].uid
+    value: C0000000950
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[10].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\DOUBLE_BTM_ENGINE_VOID.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].compartmentName
+    value: ENGINE_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].uid
+    value: C0000000984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[11].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\ENGINE_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].compartmentName
+    value: FORE_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].uid
+    value: C0000000959
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[12].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\FORE_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].compartmentName
+    value: FRESH_WATER_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].uid
+    value: C0000000979
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[13].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\FRESH_WATER_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].compartmentName
+    value: FRESH_WATER_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].uid
+    value: C0000000983
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[14].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\FRESH_WATER_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].compartmentName
+    value: NO_1_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].uid
+    value: C0000000985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[15].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_1_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].compartmentName
+    value: NO_1_DIESEL_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].uid
+    value: C0000000961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[16].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_1_DIESEL_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].compartmentName
+    value: NO_1_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].uid
+    value: C0000000975
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[17].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_1_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].uid
+    value: C0000000949
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[18].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_1_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].uid
+    value: C0000000964
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[19].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_1_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].compartmentName
+    value: NO_2_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].uid
+    value: C0000000958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[20].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_2_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].uid
+    value: C0000000966
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[21].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_2_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SERV_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].uid
+    value: C0000000971
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[22].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_2_DIESEL_OIL_TK_SERV_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].uid
+    value: C0000000980
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[23].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_2_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].uid
+    value: C0000000986
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[24].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_2_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].compartmentName
+    value: NO_3_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].uid
+    value: C0000000955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[25].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_3_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].compartmentName
+    value: NO 3 WING CARGO OIL TK PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].uid
+    value: C0000000960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[26].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_3_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].compartmentName
+    value: NO_3_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].uid
+    value: C0000000968
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[27].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_3_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[28].compartmentName
+    value: NO_4_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[28].uid
+    value: C0000000947
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[28].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_4_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[29].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[29].uid
+    value: C0000000957
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[29].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_4_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[30].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[30].uid
+    value: C0000000946
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[30].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_4_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[31].compartmentName
+    value: NO_5_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[31].uid
+    value: C0000000981
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[31].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_5_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[32].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[32].uid
+    value: C0000000963
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[32].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_5_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[33].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[33].uid
+    value: C0000000944
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[33].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_5_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[34].compartmentName
+    value: NO_6_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[34].uid
+    value: C0000000954
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[34].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\NO_6_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[35].compartmentName
+    value: PAINTING_AND_SMALL_REPAIR
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[35].uid
+    value: C0000000945
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[35].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\PAINTING_AND_SMALL_REPAIR.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[36].compartmentName
+    value: ROPE_STORE_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[36].uid
+    value: C0000000978
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[36].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\ROPE_STORE_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[37].compartmentName
+    value: PUMP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[37].uid
+    value: C0000000969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[37].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\PUMP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[38].compartmentName
+    value: ROPE_STORE_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[38].uid
+    value: C0000000953
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[38].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\ROPE_STORE_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[39].compartmentName
+    value: SLUDGE_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[39].uid
+    value: C0000000988
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[39].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\SLUDGE_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[40].compartmentName
+    value: WELDING_WORKSHOP
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[40].uid
+    value: C0000000977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[40].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\WELDING_WORKSHOP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[41].compartmentName
+    value: FWD_ELECTRICAL_PANEL_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[41].uid
+    value: C0000000973
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[41].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\FWD_ELECTRICAL_PANEL_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[42].compartmentName
+    value: HYDROLIC_DRAIN_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[42].uid
+    value: C0000000965
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[42].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\HYDROLIC_DRAIN_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[43].compartmentName
+    value: HYDROLIC_STOR_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[43].uid
+    value: C0000000948
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[43].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\HYDROLIC_STOR_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[44].compartmentName
+    value: EFP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[44].uid
+    value: C0000000972
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.data[44].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Stiffeners\EFP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.vesselId
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.chunkLinks.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: jsonString
+    value: "{\n    \"compartment\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\PETROBRAS_COMP.glb\",\n   
+      \"shell\": \"\",\n    \"vesselId\": \"1\",\n    \"plates\": [\n        {\n           
+      \"compartmentName\": \"AFT_PEAK_TK\",\n            \"uid\": \"C0000000976\",\n           
+      \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\AFT_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"AFT_STORE\",\n           
+      \"uid\": \"C0000000974\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\AFT_STORE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"AFT_VOID_SPACE\",\n           
+      \"uid\": \"C0000000967\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\AFT_VOID_SPACE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"BILGE_WATER_SETT_TK\",\n           
+      \"uid\": \"C0000000952\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\BILGE_WATER_SETT_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"BOATSWAINS_STORE\",\n           
+      \"uid\": \"C0000000970\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\BOATSWAINS_STORE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"CLEAN_SLOP_TK_SB\",\n           
+      \"uid\": \"C0000000951\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\CLEAN_SLOP_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIESEL_OIL_OVERFLOW_TK_PS\",\n           
+      \"uid\": \"C0000000942\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\DIESEL_OIL_OVERFLOW_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIRTY_SLOP_TK_PS\",\n           
+      \"uid\": \"C0000000943\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\DIRTY_SLOP_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIST_WATER_STOR_TK_PS\",\n           
+      \"uid\": \"C0000000982\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\DIST_WATER_STOR_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIST_WATER_STOR_TK_SB\",\n           
+      \"uid\": \"C0000000962\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\DIST_WATER_STOR_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DOUBLE_BTM_ENGINE_VOID\",\n           
+      \"uid\": \"C0000000950\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\DOUBLE_BTM_ENGINE_VOID.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ENGINE_ROOM\",\n           
+      \"uid\": \"C0000000984\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\ENGINE_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FORE_PEAK_TK\",\n           
+      \"uid\": \"C0000000959\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\FORE_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FRESH_WATER_TK_PS\",\n           
+      \"uid\": \"C0000000979\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\FRESH_WATER_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FRESH_WATER_TK_SB\",\n           
+      \"uid\": \"C0000000983\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\FRESH_WATER_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000985\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_1_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000961\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_1_DIESEL_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000975\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_1_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000949\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_1_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000964\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_1_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000958\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_2_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000966\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_2_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_DIESEL_OIL_TK_SERV_PS\",\n           
+      \"uid\": \"C0000000971\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_2_DIESEL_OIL_TK_SERV_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000980\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_2_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000986\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_2_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000955\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_3_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO 3 WING CARGO OIL TK PS\",\n           
+      \"uid\": \"C0000000960\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_3_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000968\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_3_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000947\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_4_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000957\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_4_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000946\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_4_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000981\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_5_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000963\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_5_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000944\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_5_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_6_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000954\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\NO_6_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"PAINTING_AND_SMALL_REPAIR\",\n           
+      \"uid\": \"C0000000945\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\PAINTING_AND_SMALL_REPAIR.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"PUMP_ROOM\",\n           
+      \"uid\": \"C0000000969\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\PUMP_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ROPE_STORE_PS\",\n           
+      \"uid\": \"C0000000978\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\ROPE_STORE_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ROPE_STORE_SB\",\n           
+      \"uid\": \"C0000000953\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\ROPE_STORE_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"SLUDGE_TK_PS\",\n           
+      \"uid\": \"C0000000988\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\SLUDGE_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"WELDING_WORKSHOP\",\n           
+      \"uid\": \"C0000000977\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\WELDING_WORKSHOP.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FWD_ELECTRICAL_PANEL_ROOM\",\n           
+      \"uid\": \"C0000000973\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\FWD_ELECTRICAL_PANEL_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"HYDROLIC_DRAIN_TK\",\n           
+      \"uid\": \"C0000000965\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\HYDROLIC_DRAIN_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"HYDROLIC_STOR_TK\",\n           
+      \"uid\": \"C0000000948\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\HYDROLIC_STOR_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"EFP_ROOM\",\n           
+      \"uid\": \"C0000000972\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\EFP_ROOM.glb\"\n       
+      }\n    ],\n    \"brackets\": [\n        {\n            \"compartmentName\":
+      \"AFT_PEAK_TK\",\n            \"uid\": \"C0000000976\",\n            \"link\":
+      \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\AFT_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"CLEAN_SLOP_TK_SB\",\n           
+      \"uid\": \"C0000000951\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\CLEAN_SLOP_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIRTY_SLOP_TK_PS\",\n           
+      \"uid\": \"C0000000943\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\DIRTY_SLOP_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ENGINE_ROOM\",\n           
+      \"uid\": \"C0000000984\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\ENGINE_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FORE_PEAK_TK\",\n           
+      \"uid\": \"C0000000959\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\FORE_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000985\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_1_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000961\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_1_DIESEL_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000975\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_1_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000949\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_1_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000964\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_1_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000958\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_2_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000966\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_2_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000980\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_2_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000986\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_2_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000955\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_3_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO 3 WING CARGO OIL TK PS\",\n           
+      \"uid\": \"C0000000960\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_3_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000968\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_3_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000947\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_4_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000957\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_4_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000946\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_4_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000981\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_5_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000963\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_5_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000944\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_5_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_6_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000954\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Brackets\\\\NO_6_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ROPE_STORE_SB\",\n           
+      \"uid\": \"C0000000953\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\ROPE_STORE_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"WELDING_WORKSHOP\",\n           
+      \"uid\": \"C0000000977\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Plates\\\\WELDING_WORKSHOP.glb\"\n       
+      }\n    ],\n    \"stiffeners\": [\n        {\n            \"compartmentName\":
+      \"AFT_PEAK_TK\",\n            \"uid\": \"C0000000976\",\n            \"link\":
+      \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\AFT_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"AFT_STORE\",\n           
+      \"uid\": \"C0000000974\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\AFT_STORE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"AFT_VOID_SPACE\",\n           
+      \"uid\": \"C0000000967\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\AFT_VOID_SPACE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"BILGE_WATER_SETT_TK\",\n           
+      \"uid\": \"C0000000952\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\BILGE_WATER_SETT_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"BOATSWAINS_STORE\",\n           
+      \"uid\": \"C0000000970\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\BOATSWAINS_STORE.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"CLEAN_SLOP_TK_SB\",\n           
+      \"uid\": \"C0000000951\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\CLEAN_SLOP_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIESEL_OIL_OVERFLOW_TK_PS\",\n           
+      \"uid\": \"C0000000942\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\DIESEL_OIL_OVERFLOW_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIRTY_SLOP_TK_PS\",\n           
+      \"uid\": \"C0000000943\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\DIRTY_SLOP_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIST_WATER_STOR_TK_PS\",\n           
+      \"uid\": \"C0000000982\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\DIST_WATER_STOR_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DIST_WATER_STOR_TK_SB\",\n           
+      \"uid\": \"C0000000962\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\DIST_WATER_STOR_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"DOUBLE_BTM_ENGINE_VOID\",\n           
+      \"uid\": \"C0000000950\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\DOUBLE_BTM_ENGINE_VOID.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ENGINE_ROOM\",\n           
+      \"uid\": \"C0000000984\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\ENGINE_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FORE_PEAK_TK\",\n           
+      \"uid\": \"C0000000959\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\FORE_PEAK_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FRESH_WATER_TK_PS\",\n           
+      \"uid\": \"C0000000979\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\FRESH_WATER_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FRESH_WATER_TK_SB\",\n           
+      \"uid\": \"C0000000983\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\FRESH_WATER_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000985\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_1_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000961\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_1_DIESEL_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000975\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_1_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000949\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_1_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_1_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000964\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_1_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000958\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_2_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_DIESEL_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000966\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_2_DIESEL_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_DIESEL_OIL_TK_SERV_PS\",\n           
+      \"uid\": \"C0000000971\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_2_DIESEL_OIL_TK_SERV_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000980\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_2_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_2_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000986\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_2_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000955\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_3_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO 3 WING CARGO OIL TK PS\",\n           
+      \"uid\": \"C0000000960\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_3_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_3_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000968\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_3_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000947\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_4_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_PS\",\n           
+      \"uid\": \"C0000000957\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_4_WING_WATER_BLT_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_4_WING_WATER_BLT_TK_SB\",\n           
+      \"uid\": \"C0000000946\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_4_WING_WATER_BLT_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000981\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_5_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_PS\",\n           
+      \"uid\": \"C0000000963\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_5_WING_CARGO_OIL_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_5_WING_CARGO_OIL_TK_SB\",\n           
+      \"uid\": \"C0000000944\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_5_WING_CARGO_OIL_TK_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"NO_6_CENTRAL_CARGO_OIL_TK\",\n           
+      \"uid\": \"C0000000954\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\NO_6_CENTRAL_CARGO_OIL_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"PAINTING_AND_SMALL_REPAIR\",\n           
+      \"uid\": \"C0000000945\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\PAINTING_AND_SMALL_REPAIR.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ROPE_STORE_PS\",\n           
+      \"uid\": \"C0000000978\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\ROPE_STORE_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"PUMP_ROOM\",\n           
+      \"uid\": \"C0000000969\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\PUMP_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"ROPE_STORE_SB\",\n           
+      \"uid\": \"C0000000953\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\ROPE_STORE_SB.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"SLUDGE_TK_PS\",\n           
+      \"uid\": \"C0000000988\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\SLUDGE_TK_PS.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"WELDING_WORKSHOP\",\n           
+      \"uid\": \"C0000000977\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\WELDING_WORKSHOP.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"FWD_ELECTRICAL_PANEL_ROOM\",\n           
+      \"uid\": \"C0000000973\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\FWD_ELECTRICAL_PANEL_ROOM.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"HYDROLIC_DRAIN_TK\",\n           
+      \"uid\": \"C0000000965\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\HYDROLIC_DRAIN_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"HYDROLIC_STOR_TK\",\n           
+      \"uid\": \"C0000000948\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\HYDROLIC_STOR_TK.glb\"\n       
+      },\n        {\n            \"compartmentName\": \"EFP_ROOM\",\n           
+      \"uid\": \"C0000000972\",\n            \"link\": \"C:\\\\Projects\\\\Unity\\\\ABS-Vessels\\\\PETROBRAS\\\\Stiffeners\\\\EFP_ROOM.glb\"\n       
+      }\n    ]\n}"
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

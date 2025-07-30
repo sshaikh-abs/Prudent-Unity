@@ -1,0 +1,593 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GltfLoader_Petrobras_Sahir
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e177b631e36bd774bb5f5a7e5e5c3f6c,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bypassNetwork
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: offlineModelAddress
+    value: C:/Projects/Unity/abs-unity/Assets/Imports/Models/TEST_FPSO.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: materialToApply
+    value: 
+    objectReference: {fileID: 2100000, guid: e12de86a37dc44148862c5fa3ba9b628, type: 2}
+  - target: {fileID: 0}
+    propertyPath: options.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[0]'
+    value: TEST_FPSO_STRUCTURAL
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[1]'
+    value: TEST_FPSO_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[2]'
+    value: PETROBRAS_COMPARTMENT
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[3]'
+    value: OLD_COMPARTMENT_TESTFPSO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[4]'
+    value: PAN_ASIA
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.compartment
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\PETROBRAS_COMP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.shell
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.vesselId
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.size
+    value: 41
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].compartmentName
+    value: AFT_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].uid
+    value: C0000000976
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[0].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].compartmentName
+    value: AFT_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].uid
+    value: C0000000974
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[1].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].compartmentName
+    value: AFT_VOID_SPACE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].uid
+    value: C0000000967
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[2].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\AFT_VOID_SPACE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].compartmentName
+    value: BILGE_WATER_SETT_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].uid
+    value: C0000000952
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[3].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\BILGE_WATER_SETT_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].compartmentName
+    value: BOATSWAINS_STORE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].uid
+    value: C0000000970
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[4].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\BOATSWAINS_STORE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].compartmentName
+    value: CLEAN_SLOP_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].uid
+    value: C0000000951
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[5].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\CLEAN_SLOP_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].compartmentName
+    value: DIESEL_OIL_OVERFLOW_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].uid
+    value: C0000000942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[6].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIESEL_OIL_OVERFLOW_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].compartmentName
+    value: DIRTY_SLOP_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].uid
+    value: C0000000943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[7].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIRTY_SLOP_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].compartmentName
+    value: DIST_WATER_STOR_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].uid
+    value: C0000000982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[8].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIST_WATER_STOR_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].compartmentName
+    value: DIST_WATER_STOR_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].uid
+    value: C0000000962
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[9].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DIST_WATER_STOR_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].compartmentName
+    value: DOUBLE_BTM_ENGINE_VOID
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].uid
+    value: C0000000950
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[10].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\DOUBLE_BTM_ENGINE_VOID.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].compartmentName
+    value: ENGINE_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].uid
+    value: C0000000984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[11].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ENGINE_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].compartmentName
+    value: FORE_PEAK_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].uid
+    value: C0000000959
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[12].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FORE_PEAK_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].compartmentName
+    value: FRESH_WATER_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].uid
+    value: C0000000979
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[13].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FRESH_WATER_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].compartmentName
+    value: FRESH_WATER_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].uid
+    value: C0000000983
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[14].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\FRESH_WATER_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].compartmentName
+    value: NO_1_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].uid
+    value: C0000000985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[15].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].compartmentName
+    value: NO_1_DIESEL_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].uid
+    value: C0000000961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[16].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_DIESEL_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].compartmentName
+    value: NO_1_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].uid
+    value: C0000000975
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[17].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].uid
+    value: C0000000949
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[18].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].compartmentName
+    value: NO_1_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].uid
+    value: C0000000964
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[19].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_1_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].compartmentName
+    value: NO_2_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].uid
+    value: C0000000958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[20].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].uid
+    value: C0000000966
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[21].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_DIESEL_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].compartmentName
+    value: NO_2_DIESEL_OIL_TK_SERV_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].uid
+    value: C0000000971
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[22].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_DIESEL_OIL_TK_SERV_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].uid
+    value: C0000000980
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[23].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].compartmentName
+    value: NO_2_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].uid
+    value: C0000000986
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[24].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_2_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].compartmentName
+    value: NO_3_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].uid
+    value: C0000000955
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[25].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].compartmentName
+    value: NO 3 WING CARGO OIL TK PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].uid
+    value: C0000000960
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[26].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].compartmentName
+    value: NO_3_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].uid
+    value: C0000000968
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[27].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_3_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].compartmentName
+    value: NO_4_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].uid
+    value: C0000000947
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[28].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].uid
+    value: C0000000957
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[29].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_WING_WATER_BLT_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].compartmentName
+    value: NO_4_WING_WATER_BLT_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].uid
+    value: C0000000946
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[30].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_4_WING_WATER_BLT_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].compartmentName
+    value: NO_5_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].uid
+    value: C0000000981
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[31].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].uid
+    value: C0000000963
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[32].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_WING_CARGO_OIL_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].compartmentName
+    value: NO_5_WING_CARGO_OIL_TK_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].uid
+    value: C0000000944
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[33].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_5_WING_CARGO_OIL_TK_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].compartmentName
+    value: NO_6_CENTRAL_CARGO_OIL_TK
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].uid
+    value: C0000000954
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[34].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\NO_6_CENTRAL_CARGO_OIL_TK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].compartmentName
+    value: PAINTING_AND_SMALL_REPAIR
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].uid
+    value: C0000000945
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[35].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\PAINTING_AND_SMALL_REPAIR.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].compartmentName
+    value: PUMP_ROOM
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].uid
+    value: C0000000969
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[36].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\PUMP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].compartmentName
+    value: ROPE_STORE_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].uid
+    value: C0000000978
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[37].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ROPE_STORE_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].compartmentName
+    value: ROPE_STORE_SB
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].uid
+    value: C0000000953
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[38].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\ROPE_STORE_SB.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].compartmentName
+    value: SLUDGE_TK_PS
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].uid
+    value: C0000000988
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[39].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\SLUDGE_TK_PS.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].compartmentName
+    value: WELDING_WORKSHOP
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].uid
+    value: C0000000977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.plates.Array.data[40].link
+    value: C:\Projects\Unity\ABS-Vessels\PETROBRAS\Plates\WELDING_WORKSHOP.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.brackets.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorCommand.stiffeners.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.vesselId
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: editorBulkCommand.chunkLinks.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

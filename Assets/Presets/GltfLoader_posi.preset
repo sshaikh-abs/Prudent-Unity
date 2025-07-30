@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GltfLoader_posi
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e177b631e36bd774bb5f5a7e5e5c3f6c,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: myDropdown
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: bypassNetwork
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: offlineModelAddress
+    value: C:/Projects/Unity/abs-unity/Assets/Imports/Models/TEST_FPSO.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: materialToApply
+    value: 
+    objectReference: {fileID: 2100000, guid: e12de86a37dc44148862c5fa3ba9b628, type: 2}
+  - target: {fileID: 0}
+    propertyPath: materialToApplyToCompartmentModels
+    value: 
+    objectReference: {fileID: 2100000, guid: 53f91b78973098d4d82a2ef9c4ab8be0, type: 2}
+  - target: {fileID: 0}
+    propertyPath: options.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[0]'
+    value: COMPARTMENT_TESTFPSO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[1]'
+    value: TEST_FPSO_V3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[2]'
+    value: PAN_ASIA_LOCAL
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[3]'
+    value: PAN_EUROPE
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[4]'
+    value: LIZA_DESTINY
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'options.Array.data[5]'
+    value: FPSO_cidade_de_campos
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: links.Array.size
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[0]'
+    value: D:/Posibabu/GlbModels/TestFPSO/AFT_PEAK_TANK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[1]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_01_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[2]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_01_P.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[3]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_01_S.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[4]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_02_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[5]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_02_P.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[6]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_02_S.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[7]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_03_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[8]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_03_P.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[9]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_03_S.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[10]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_04_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[11]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_04_P.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[12]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_04_S.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[13]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_05_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[14]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_05_P.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[15]'
+    value: D:/Posibabu/GlbModels/TestFPSO/CARGO_TANK_05_S.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[16]'
+    value: D:/Posibabu/GlbModels/TestFPSO/ENGINE_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[17]'
+    value: D:/Posibabu/GlbModels/TestFPSO/FORE_PEAK_TANK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[18]'
+    value: D:/Posibabu/GlbModels/TestFPSO/FWD_DEEP_VOID_SPACE.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[19]'
+    value: D:/Posibabu/GlbModels/TestFPSO/PUMP_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[20]'
+    value: D:/Posibabu/GlbModels/TestFPSO/PUMP_ROOM_TRUNK.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[21]'
+    value: D:/Posibabu/GlbModels/TestFPSO/SLOP_TANK_-_C.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[22]'
+    value: D:/Posibabu/GlbModels/TestFPSO/STEERING_GEAR_ROOM.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[23]'
+    value: D:/Posibabu/GlbModels/TestFPSO/STORAGE_SPACES_FWD.glb
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'links.Array.data[24]'
+    value: D:/Posibabu/GlbModels/TestFPSO/STERN_TB_COOLING_WAT.glb
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

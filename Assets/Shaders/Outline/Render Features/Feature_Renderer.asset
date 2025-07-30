@@ -1,0 +1,448 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8695010479805967585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 524416
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 833f2772c0580ee4ab719cd03c0fdcf3, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.6156863, g: 0.40784317, b: 0.7019608, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &-5498245115311681549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 128
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 5
+    OverrideMaterial: {fileID: 2100000, guid: 37b4d562283d9964ba7e87984b7c33e5, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: 37b4d562283d9964ba7e87984b7c33e5,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: eff3808fc84d53c4c86fec3ebb0fc980, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 0
+  MaterialSettings:
+    OutlineScale: 1
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    useBrandColors: 0
+    obeyTransparency: 0
+--- !u!114 &-2833493304434771509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 262272
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 27f9f8158a50f524ebbc6e0d370da29e, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.75294125, g: 0.6901961, b: 0.25882354, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: Feature_Renderer
+  m_EditorClassIdentifier: 
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7,
+      type: 3}
+    hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
+    probeVolumeSamplingDebugComputeShader: {fileID: 7200000, guid: 53626a513ea68ce47b59dc1299fe3959,
+      type: 3}
+  probeVolumeResources:
+    probeVolumeDebugShader: {fileID: 0}
+    probeVolumeFragmentationDebugShader: {fileID: 0}
+    probeVolumeOffsetDebugShader: {fileID: 0}
+    probeVolumeSamplingDebugShader: {fileID: 0}
+    probeSamplingDebugMesh: {fileID: 0}
+    probeSamplingDebugTexture: {fileID: 0}
+    probeVolumeBlendStatesCS: {fileID: 0}
+  m_RendererFeatures:
+  - {fileID: 3344713140055334180}
+  - {fileID: 7064295072073946709}
+  - {fileID: -2833493304434771509}
+  - {fileID: 5316692681382933729}
+  - {fileID: 2794223647680905578}
+  - {fileID: -8695010479805967585}
+  - {fileID: 7162482392638860282}
+  - {fileID: 2319925671166084866}
+  - {fileID: 6964946444085270793}
+  - {fileID: -5498245115311681549}
+  m_RendererFeatureMap: 245d943ce1ce6a2e55968297f06a0962cbb9b723da68add8e1b4bf1dd3afc8496a4104679a13c7261fd3dd68091e5587faab3aa3c93f666302072a3f1b08322009995297e375a860f30fd2d5324fb2b3
+  m_UseNativeRenderPass: 0
+  xrSystemData: {fileID: 0}
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  m_AssetVersion: 2
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 1
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+  m_RenderingMode: 2
+  m_DepthPrimingMode: 2
+  m_CopyDepthMode: 2
+  m_DepthAttachmentFormat: 0
+  m_DepthTextureFormat: 0
+  m_AccurateGbufferNormals: 0
+  m_IntermediateTextureMode: 1
+--- !u!114 &1466963433994485956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06039b7fb968af4ca1429431f16b895, type: 3}
+  m_Name: RuntimeGizmoRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  lineMaterial: {fileID: 2100000, guid: 7e0833cbee1549840a816e6e52932946, type: 2}
+  size: 18.41
+--- !u!114 &2319925671166084866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 131200
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 1e55b07b09cf1804b9ed4d1eed16799e, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.50980395, g: 0.7058824, b: 0.5294118, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &2794223647680905578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 3145856
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: d4b479372cd0b16468e89dfc315c137c, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.43137258, g: 0.34901962, b: 0.72156864, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &3344713140055334180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
+  m_Name: ScreenSpaceAmbientOcclusion
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Settings:
+    AOMethod: 1
+    Downsample: 0
+    AfterOpaque: 1
+    Source: 0
+    NormalSamples: 2
+    Intensity: 55
+    DirectLightingStrength: 0.25
+    Radius: 0.6
+    Samples: 0
+    BlurQuality: 0
+    Falloff: 80
+    SampleCount: -1
+  m_BlueNoise256Textures:
+  - {fileID: 2800000, guid: 36f118343fc974119bee3d09e2111500, type: 3}
+  - {fileID: 2800000, guid: 4b7b083e6b6734e8bb2838b0b50a0bc8, type: 3}
+  - {fileID: 2800000, guid: c06cc21c692f94f5fb5206247191eeee, type: 3}
+  - {fileID: 2800000, guid: cb76dd40fa7654f9587f6a344f125c9a, type: 3}
+  - {fileID: 2800000, guid: e32226222ff144b24bf3a5a451de54bc, type: 3}
+  - {fileID: 2800000, guid: 3302065f671a8450b82c9ddf07426f3a, type: 3}
+  - {fileID: 2800000, guid: 56a77a3e8d64f47b6afe9e3c95cb57d5, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
+--- !u!114 &5316692681382933729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 8388736
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 78369d1e09bba2a4ea8e9b6a3140c55f, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.7725491, g: 0.74509805, b: 0.8941177, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &6964946444085270793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  FeatureSettings:
+    RenderPassEvent: 450
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 16646273
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 2edb279d6d0ad4944a90d8ab0f325011, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 1
+--- !u!114 &7064295072073946709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 4194432
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: d0f32877f4f441340be5fbdb65cefb38, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.72156864, g: 0.72156864, b: 0.72156864, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
+--- !u!114 &7162482392638860282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd6e526a1bb489a8df34cbfcfca6bfc, type: 3}
+  m_Name: OutlineRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  FeatureSettings:
+    RenderPassEvent: 550
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 1048704
+    RenderingLayerMask:
+      serializedVersion: 0
+      m_Bits: 1
+    OverrideMaterial: {fileID: 2100000, guid: 67fa7621db4e5bb40a748d57c1c0f0d9, type: 2}
+    OverrideMaterial_Wireframe: {fileID: 2100000, guid: a4014b18c13da5d4a930dff264ee875f,
+      type: 2}
+    BlitMaterial: {fileID: 2100000, guid: 729006d6f2d7ce3459ba6bf03a66aadb, type: 2}
+    ClearDepth: 1
+    usePlatesAsReference: 1
+  MaterialSettings:
+    OutlineScale: 0.5
+    RobertsCrossMultiplier: 100
+    DepthThreshold: 10
+    NormalThreshold: 0.0001
+    SteepAngleThreshold: 0.2
+    SteepAngleMultiplier: 25
+    OutlineColor: {r: 0.37254903, g: 0.8117648, b: 0.9921569, a: 1}
+    useBrandColors: 1
+    obeyTransparency: 0
