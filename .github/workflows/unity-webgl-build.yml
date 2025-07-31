@@ -1,8 +1,7 @@
-name: Unity WebGL Build
+name: Unity WebGL BR Build
 
 on:
-  # Manual trigger only (Run workflow button)
-  workflow_dispatch:
+  workflow_dispatch:  # Manual trigger only
 
 jobs:
   build-webgl:
@@ -13,28 +12,51 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Build WebGL using Unity (Brotli Production Build)
+      # Step 2: Clean Unity Library and Temp (forces fresh IL2CPP + Brotli build)
+      - name: Clean Unity Cache
+        run: |
+          Remove-Item -Recurse -Force "$env:GITHUB_WORKSPACE\Library" -ErrorAction Ignore
+          Remove-Item -Recurse -Force "$env:GITHUB_WORKSPACE\Temp" -ErrorAction Ignore
+
+      # Step 3: Build WebGL using Unity (Brotli Production Build)
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
           -quit -batchmode -nographics
-          -projectPath "C:\Unityprojects\abs-unity"
+          -projectPath "$env:GITHUB_WORKSPACE"
           -executeMethod BuildScript.BuildWebGLBR
-          -logFile "C:\Unityprojects\abs-unity\build.log"
+          -logFile "$env:GITHUB_WORKSPACE\build.log"
 
-      # Step 3: Zip the WebGL BR Build folder
+      # Step 4: Verify Unity actually produced a build
+      - name: Verify Unity Build Output
+        run: |
+          if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
+            echo "ERROR: Unity did not produce a new Brotli build!"
+            Get-Content "$env:GITHUB_WORKSPACE\build.log"
+            exit 1
+          } else {
+            echo "Brotli build verified successfully."
+          }
+
+      # Step 5: Zip the WebGL BR Build
       - name: Zip WebGL BR Build
         run: >
-          Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\BR\*" 
-          -DestinationPath "C:\Unityprojects\abs-unity\WebGLBuild.zip" -Force
+          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*" 
+          -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
 
-      # Step 4: Debug step to verify zip exists
-      - name: Debug Check Files
-        run: dir "C:\Unityprojects\abs-unity"
+      # Step 6: Debug step to confirm zip exists
+      - name: Confirm Zip Exists
+        run: |
+          if (Test-Path "$env:GITHUB_WORKSPACE\WebGLBuild.zip") {
+            echo "Zip created successfully."
+          } else {
+            echo "ERROR: Zip was not created!"
+            exit 1
+          }
 
-      # Step 5: Upload the zipped WebGL BR Build as artifact
+      # Step 7: Upload the zipped WebGL BR Build as artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild-Brotli
-          path: "C:\\Unityprojects\\abs-unity\\WebGLBuild.zip"
+          path: WebGLBuild.zip
