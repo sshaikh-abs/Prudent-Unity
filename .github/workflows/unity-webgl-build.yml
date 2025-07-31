@@ -1,53 +1,40 @@
-name: Unity WebGL BR Build
+name: Unity WebGL Build
 
 on:
-  workflow_dispatch:  # Manual trigger only
+  # Manual trigger only (Run workflow button)
+  workflow_dispatch:
 
 jobs:
   build-webgl:
     runs-on: self-hosted
 
     steps:
-      # Step 1: Checkout Repository
+      # Step 1: Checkout repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Run Unity WebGL Brotli Build
+      # Step 2: Build WebGL using Unity (Brotli Production Build)
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
           -quit -batchmode -nographics
-          -projectPath "$env:GITHUB_WORKSPACE"
+          -projectPath "C:\Unityprojects\abs-unity"
           -executeMethod BuildScript.BuildWebGLBR
-          -logFile "$env:GITHUB_WORKSPACE\build.log"
+          -logFile "C:\Unityprojects\abs-unity\build.log"
 
-      # Step 3: Debug - Show Build Output
-      - name: Debug:Show Build Output
-        run: |
-          echo "=== Root Directory ==="
-          dir "$env:GITHUB_WORKSPACE"
-          echo "=== Build Directory ==="
-          dir "$env:GITHUB_WORKSPACE\Builds\BR"
-
-      # Step 4: Zip the Brotli Build
-      - name: Zip WebGL Build
+      # Step 3: Zip the WebGL BR Build folder
+      - name: Zip WebGL BR Build
         run: >
-          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*" 
-          -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
+          Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\BR\*" 
+          -DestinationPath "C:\Unityprojects\abs-unity\WebGLBuild.zip" -Force
 
-      # Step 5: Verify Zip Exists
-      - name: Debug:Confirm Zip Exists
-        run: |
-          if (Test-Path "$env:GITHUB_WORKSPACE\WebGLBuild.zip") {
-            echo "ZIP created successfully"
-          } else {
-            echo "ERROR: ZIP not created!"
-            exit 1
-          }
+      # Step 4: Debug step to verify zip exists
+      - name: Debug Check Files
+        run: dir "C:\Unityprojects\abs-unity"
 
-      # Step 6: Upload Artifact
-      - name: Upload WebGL Build Artifact
+      # Step 5: Upload the zipped WebGL BR Build as artifact
+      - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild-Brotli
-          path: WebGLBuild.zip
+          path: "C:\\Unityprojects\\abs-unity\\WebGLBuild.zip"
