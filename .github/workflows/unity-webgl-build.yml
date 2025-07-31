@@ -8,10 +8,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      # Step 1: Checkout Repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Build WebGL with Brotli (Production)
+      # Step 2: Run Unity WebGL Brotli Build
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
@@ -20,21 +21,21 @@ jobs:
           -executeMethod BuildScript.BuildWebGLBR
           -logFile "$env:GITHUB_WORKSPACE\build.log"
 
-      # Debug step to confirm files
-      - name: Debug: List Build Output
+      # Step 3: Show build folder for debugging
+      - name: Debug: Show Build Output
         run: |
           echo "=== Root Directory ==="
           dir "$env:GITHUB_WORKSPACE"
           echo "=== Build Directory ==="
           dir "$env:GITHUB_WORKSPACE\Builds\BR"
 
-      # Zip the WebGL Brotli build
+      # Step 4: Zip the Brotli Build
       - name: Zip WebGL Build
         run: >
           Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*" 
           -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
 
-      # Verify zip exists
+      # Step 5: Verify Zip Exists
       - name: Debug: Confirm Zip Exists
         run: |
           if (Test-Path "$env:GITHUB_WORKSPACE\WebGLBuild.zip") {
@@ -44,7 +45,7 @@ jobs:
             exit 1
           }
 
-      # Upload artifact to GitHub
+      # Step 6: Upload Artifact
       - name: Upload WebGL Build Artifact
         uses: actions/upload-artifact@v4
         with:
