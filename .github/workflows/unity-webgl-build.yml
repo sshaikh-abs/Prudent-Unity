@@ -22,7 +22,7 @@ jobs:
           -logFile "$env:GITHUB_WORKSPACE\build.log"
 
       # Step 3: Debug - Show Build Output
-      - name: Debug: Show Build Output
+      - name: Debug:Show Build Output
         run: |
           echo "=== Root Directory ==="
           dir "$env:GITHUB_WORKSPACE"
@@ -36,7 +36,7 @@ jobs:
           -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
 
       # Step 5: Verify Zip Exists
-      - name: Debug: Confirm Zip Exists
+      - name: Debug:Confirm Zip Exists
         run: |
           if (Test-Path "$env:GITHUB_WORKSPACE\WebGLBuild.zip") {
             echo "ZIP created successfully"
