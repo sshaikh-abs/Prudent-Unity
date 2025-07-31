@@ -1,8 +1,8 @@
 name: Unity WebGL Build
 
 on:
-  push:
-    branches: [ "main" ]
+  # Manual trigger only (Run workflow button)
+  workflow_dispatch:
 
 jobs:
   build-webgl:
@@ -28,7 +28,11 @@ jobs:
           Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\Local\*" 
           -DestinationPath "C:\Unityprojects\abs-unity\WebGLBuild.zip" -Force
 
-      # Step 4: Upload the zipped WebGL Build as artifact
+      # Step 4: Debug step to verify zip exists
+      - name: Debug Check Files
+        run: dir "C:\Unityprojects\abs-unity"
+
+      # Step 5: Upload the zipped WebGL Build as artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
