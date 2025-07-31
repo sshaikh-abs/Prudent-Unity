@@ -4,7 +4,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Unityprojects/abs-unity/Builds/Local/webgl_1.1;C:/Unity Projects/abs-unity/Builds/BR/webgl_1.1;C:/Unity Projects/abs-unity/Builds/Local/webgl_1.1;C:/Unity Projects/webgl_1.1;C:/Projects/Unity/Eagle/Builds/Compressed/webgl_1.1;D:/Posibabu/Projects/Output/egle-abs/unCompressed;D:/Posibabu/Projects/Output/egle-abs/Compressed/webgl_1.1;C:/Projects/Unity/Eagle/Builds/LocalBuild/webgl_1.1;D:/Posibabu/Projects/Output/egle-abs/unCompressed/webgl_1.1;D:/Posibabu/Projects/Output/Unity6/webgl_1.1_m/webgl_1.1_unity6/webgl_1.1_compressed_/webgl_1.1\"}"
+                "value": "{\"m_Value\":\"C:/Unityprojects/abs-unity/Builds/BR/webgl_1.1;C:/Unityprojects/abs-unity/Builds/Local/webgl_1.1;C:/Unity Projects/abs-unity/Builds/BR/webgl_1.1;C:/Unity Projects/abs-unity/Builds/Local/webgl_1.1;C:/Unity Projects/webgl_1.1;C:/Projects/Unity/Eagle/Builds/Compressed/webgl_1.1;D:/Posibabu/Projects/Output/egle-abs/unCompressed;D:/Posibabu/Projects/Output/egle-abs/Compressed/webgl_1.1;C:/Projects/Unity/Eagle/Builds/LocalBuild/webgl_1.1;D:/Posibabu/Projects/Output/egle-abs/unCompressed/webgl_1.1\"}"
             },
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

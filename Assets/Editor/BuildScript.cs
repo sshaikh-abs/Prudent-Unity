@@ -1,94 +1,66 @@
 using UnityEditor;
 using UnityEngine;
-using System.Diagnostics;
+using UnityEditor.Build.Reporting;
 using System.IO;
-using System;
 
-public class BuildScript
+public static class BuildScript
 {
+    // Versioned folder for WebGL Brotli build
     private static readonly string buildVersion = "webgl_1.1";
+    private static readonly string buildPath = "Builds/BR/" + buildVersion;
 
-    [MenuItem("Build/Build WebGL - BR (Deployment)")]
+    [MenuItem("Build/Build WebGL - BR (Production)")]
     public static void BuildWebGLBR()
     {
+        Debug.Log("=== Starting WebGL Brotli Build ===");
+
         ApplyWebGLSettingsBR();
+        PrepareBuildFolder(buildPath);
 
-        string buildPath = @"C:\Unityprojects\abs-unity\Builds\BR\" + buildVersion;
-        Build(buildPath);
+        string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update scene path if needed
 
-        UnityEngine.Debug.Log("BR WebGL Build Completed");
-
-        // Optional: Auto-push script if needed
-        // Process.Start("bash", "Scripts/PushWebGLToGit.sh");
-    }
-
-    private static void Build(string buildPath)
-    {
-        // Clean old build
-        if (Directory.Exists(buildPath))
-        {
-            Directory.Delete(buildPath, true);
-            UnityEngine.Debug.Log("Old build folder deleted: " + buildPath);
-        }
-
-        string parentDir = Path.GetDirectoryName(buildPath);
-        if (!Directory.Exists(parentDir))
-            Directory.CreateDirectory(parentDir);
-
-        // Build Player
         BuildPlayerOptions options = new BuildPlayerOptions
         {
-            scenes = new[] { "Assets/Scenes/MainScene.unity" }, // Update if needed
+            scenes = scenes,
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
             options = BuildOptions.None
         };
 
-        var report = BuildPipeline.BuildPlayer(options);
+        BuildReport report = BuildPipeline.BuildPlayer(options);
 
-        if (report.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded)
-        {
-            UnityEngine.Debug.Log($"WebGL Build succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB");
-        }
+        if (report.summary.result == BuildResult.Succeeded)
+            Debug.Log($"=== WebGL Brotli Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
         else
-        {
-            UnityEngine.Debug.LogError("WebGL Build failed!");
-        }
+            Debug.LogError("=== WebGL Brotli Build Failed ===");
     }
 
     private static void ApplyWebGLSettingsBR()
     {
-        // Enable Brotli compression
+        // Brotli compression
         PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
 
-        // Disable decompression fallback to get .br files instead of .unityweb
+        // Force .br files instead of .unityweb
         PlayerSettings.WebGL.decompressionFallback = false;
 
-        // Optimize for smaller builds using LTO
-        SetIl2CppCodeGeneration("OptimizeSizeWithLTO");
-
-        // Strip unused engine code
+        // Optimize for smallest wasm using LTO
+        EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "size");
         PlayerSettings.stripEngineCode = true;
 
-        UnityEngine.Debug.Log("Applied BR Build Settings (Brotli + LTO, .br output)");
+        Debug.Log("Applied Brotli + LTO settings (.br output)");
     }
 
-
-    private static void SetIl2CppCodeGeneration(string enumName)
+    private static void PrepareBuildFolder(string path)
     {
-        var enumType = typeof(PlayerSettings).Assembly.GetType("UnityEditor.Il2CppCodeGenerationOption");
-        var method = typeof(PlayerSettings).GetMethod("SetIl2CppCodeGeneration", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+        if (Directory.Exists(path))
+        {
+            Directory.Delete(path, true);
+            Debug.Log("Old build folder deleted: " + path);
+        }
 
-        if (enumType != null && method != null)
-        {
-            var enumValue = Enum.Parse(enumType, enumName);
-            method.Invoke(null, new object[] { BuildTargetGroup.WebGL, enumValue });
-            UnityEngine.Debug.Log($"IL2CPP Code Generation set to: {enumName}");
-        }
-        else
-        {
-            UnityEngine.Debug.LogWarning("Unable to set IL2CPP Code Generation. Unity version may not support reflection access.");
-        }
+        string parentDir = Path.GetDirectoryName(path);
+        if (!Directory.Exists(parentDir))
+            Directory.CreateDirectory(parentDir);
     }
 }
 
