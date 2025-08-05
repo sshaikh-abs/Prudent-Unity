@@ -17,7 +17,7 @@ public static class BuildScript
         ApplyWebGLSettingsBR();
         PrepareBuildFolder(buildPath);
 
-        string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update scene path if needed
+        string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update if needed
 
         BuildPlayerOptions options = new BuildPlayerOptions
         {
@@ -37,17 +37,22 @@ public static class BuildScript
 
     private static void ApplyWebGLSettingsBR()
     {
-        // Brotli compression
+        // Force Brotli compression
         PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
 
-        // Force .br files instead of .unityweb
+        // Disable fallback to .unityweb
         PlayerSettings.WebGL.decompressionFallback = false;
 
-        // Optimize for smallest wasm using LTO
+        // Optimize IL2CPP for smallest output (size with LTO)
         EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "size");
         PlayerSettings.stripEngineCode = true;
 
-        Debug.Log("Applied Brotli + LTO settings (.br output)");
+        // Make sure to strip debug info for production
+        EditorUserBuildSettings.development = false;
+        EditorUserBuildSettings.connectProfiler = false;
+        EditorUserBuildSettings.allowDebugging = false;
+
+        Debug.Log("Applied Brotli + LTO settings (.br output only)");
     }
 
     private static void PrepareBuildFolder(string path)
@@ -63,11 +68,6 @@ public static class BuildScript
             Directory.CreateDirectory(parentDir);
     }
 }
-
-
-
-
-
 
 
 
