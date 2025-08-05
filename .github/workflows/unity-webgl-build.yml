@@ -1,26 +1,18 @@
-name: Unity WebGL BR Build
+name: Unity WebGL Brotli Build
 
 on:
   workflow_dispatch:  # Manual trigger only
 
 jobs:
   build-webgl:
-    runs-on: self-hosted
+    runs-on: [self-hosted, Windows, X64]  # or use custom label if you added one
 
     steps:
-      # Step 1: Checkout repository
+      # Step 1: Checkout repo
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Warm up Unity Library (generate Library before Brotli build)
-      - name: Warm up Unity Library
-        run: >
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
-          -quit -batchmode -nographics
-          -projectPath "$env:GITHUB_WORKSPACE"
-          -logFile "$env:GITHUB_WORKSPACE\library_build.log"
-
-      # Step 3: Build WebGL using Unity (Brotli Production Build)
+      # Step 2: Run Unity WebGL Brotli Build
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
@@ -29,8 +21,8 @@ jobs:
           -executeMethod BuildScript.BuildWebGLBR
           -logFile "$env:GITHUB_WORKSPACE\build.log"
 
-      # Step 4: Verify Unity actually produced a Brotli build
-      - name: Verify Unity Build Output
+      # Step 3: Verify Brotli Build
+      - name: Verify Brotli Build
         run: |
           if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
             echo "ERROR: Unity did not produce a new Brotli build!"
@@ -40,23 +32,13 @@ jobs:
             echo "Brotli build verified successfully."
           }
 
-      # Step 5: Zip the WebGL BR Build
+      # Step 4: Zip the Build
       - name: Zip WebGL BR Build
         run: >
-          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*" 
+          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*"
           -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
 
-      # Step 6: Confirm Zip Exists
-      - name: Confirm Zip Exists
-        run: |
-          if (Test-Path "$env:GITHUB_WORKSPACE\WebGLBuild.zip") {
-            echo "Zip created successfully."
-          } else {
-            echo "ERROR: Zip was not created!"
-            exit 1
-          }
-
-      # Step 7: Upload the zipped WebGL BR Build as artifact
+      # Step 5: Upload as Artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
