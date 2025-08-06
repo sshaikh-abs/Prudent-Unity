@@ -1,18 +1,18 @@
 name: Unity WebGL Brotli Build
 
 on:
-  workflow_dispatch:  # Manual trigger only
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   build-webgl:
-    runs-on: [self-hosted, Windows, X64]  # or use custom label if you added one
+    runs-on: self-hosted
 
     steps:
-      # Step 1: Checkout repo
+      # Step 1: Checkout repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Run Unity WebGL Brotli Build
+      # Step 2: Build WebGL (Brotli Production Build)
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
@@ -21,7 +21,7 @@ jobs:
           -executeMethod BuildScript.BuildWebGLBR
           -logFile "$env:GITHUB_WORKSPACE\build.log"
 
-      # Step 3: Verify Brotli Build
+      # Step 3: Verify Brotli Build was generated
       - name: Verify Brotli Build
         run: |
           if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
@@ -32,15 +32,15 @@ jobs:
             echo "Brotli build verified successfully."
           }
 
-      # Step 4: Zip the Build
+      # Step 4: Zip the WebGL BR Build folder
       - name: Zip WebGL BR Build
         run: >
-          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*"
-          -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild.zip" -Force
+          Compress-Archive -Path "$env:GITHUB_WORKSPACE\Builds\BR\*" 
+          -DestinationPath "$env:GITHUB_WORKSPACE\WebGLBuild-Brotli.zip" -Force
 
-      # Step 5: Upload as Artifact
+      # Step 5: Upload the zipped WebGL BR Build as artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild-Brotli
-          path: WebGLBuild.zip
+          path: ${{ github.workspace }}\WebGLBuild-Brotli.zip
