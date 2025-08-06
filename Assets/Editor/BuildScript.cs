@@ -8,24 +8,22 @@ public static class BuildScript
     private static readonly string buildVersion = "webgl_1.1";
     private static readonly string buildPath = "Builds/BR/" + buildVersion;
 
+    [MenuItem("Build/Build WebGL - BR (Production)")]
     public static void BuildWebGLBR()
     {
         Debug.Log("=== Starting WebGL Brotli Build ===");
 
-        // Optional: Clean old build only
+        ApplyWebGLSettingsBR();
         PrepareBuildFolder(buildPath);
 
-        // Apply Brotli settings
-        ApplyWebGLSettingsBR();
-
-        string[] scenes = { "Assets/Scenes/MainScene.unity" };
+        string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update if needed
 
         BuildPlayerOptions options = new BuildPlayerOptions
         {
             scenes = scenes,
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
-            options = BuildOptions.None
+            options = BuildOptions.None // Avoid CleanBuildCache to keep CI stable
         };
 
         BuildReport report = BuildPipeline.BuildPlayer(options);
@@ -47,19 +45,28 @@ public static class BuildScript
         EditorUserBuildSettings.connectProfiler = false;
         EditorUserBuildSettings.allowDebugging = false;
 
-        Debug.Log("Applied Brotli + Optimized settings.");
+        // Optional: disable burst safely on CI
+#if UNITY_BURST
+        Unity.Burst.BurstCompiler.Options.EnableBurstCompilation = false;
+#endif
+
+        Debug.Log("Applied Brotli + LTO settings (.br output only)");
     }
 
     private static void PrepareBuildFolder(string path)
     {
         if (Directory.Exists(path))
+        {
             Directory.Delete(path, true);
+            Debug.Log("Old build folder deleted: " + path);
+        }
 
         string parentDir = Path.GetDirectoryName(path);
         if (!Directory.Exists(parentDir))
             Directory.CreateDirectory(parentDir);
     }
 }
+
 
 
 

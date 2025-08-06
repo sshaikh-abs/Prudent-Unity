@@ -1,36 +1,51 @@
-name: Build WebGL Brotli
+name: Unity WebGL Brotli Build
 
 on:
+  # Manual trigger only
   workflow_dispatch:
 
 jobs:
-  build:
+  build-webgl:
     runs-on: self-hosted
+
     steps:
+      # Step 1: Checkout repository but keep existing files (Library etc.)
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          clean: false  # Keep Library folder
+          clean: false
 
-      - name: Build Unity WebGL (Brotli)
+      # Step 2: Build WebGL (Brotli)
+      - name: Build WebGL (Brotli)
+        run: >
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
+          -quit -batchmode -nographics
+          -projectPath "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity"
+          -executeMethod BuildScript.BuildWebGLBR
+          -logFile "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\build.log"
+
+      # Step 3: Verify Brotli build exists
+      - name: Verify Build Output
         shell: powershell
         run: |
-          "Starting Unity build..."
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
-            -quit -batchmode -nographics `
-            -projectPath "$env:GITHUB_WORKSPACE\Prudent-Unity" `
-            -executeMethod BuildScript.BuildWebGLBR `
-            -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
-
-      - name: Verify Brotli Build
-        shell: powershell
-        run: |
-          $buildPath = "$env:GITHUB_WORKSPACE\Prudent-Unity\Builds\BR\webgl_1.1\index.html"
-          if (!(Test-Path $buildPath)) {
-            Write-Host "ERROR: Unity did not produce a Brotli build!"
-            Get-Content "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
+          if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
+            echo "ERROR: Unity did not produce a new Brotli build!"
+            Get-Content "$env:GITHUB_WORKSPACE\build.log"
             exit 1
           } else {
-            Write-Host "Brotli build verified successfully."
+            echo "Brotli build verified successfully."
           }
 
+
+      # Step 4: Zip the build
+      - name: Zip WebGL Build
+        run: >
+          Compress-Archive -Path "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\Builds\BR\*" 
+          -DestinationPath "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\WebGLBuild.zip" -Force
+
+      # Step 5: Upload the artifact
+      - name: Upload WebGL Build Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: WebGLBuild-Brotli
+          path: "C:\\GitHubRunner\\actions-runner\\_work\\Prudent-Unity\\Prudent-Unity\\WebGLBuild.zip"
