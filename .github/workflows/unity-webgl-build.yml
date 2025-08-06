@@ -13,12 +13,13 @@ jobs:
           clean: false # Keeps Library folder if exists for faster builds
 
       - name: Check Unity Version
-        shell: pwsh
+        shell: powershell
         run: |
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" --version
 
+
       - name: Build Unity Project (Local WebGL)
-        shell: pwsh
+        shell: powershell
         run: |
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
             -quit `
@@ -29,7 +30,7 @@ jobs:
             -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity\build.log"
 
       - name: Verify WebGL Build
-        shell: pwsh
+        shell: powershell
         run: |
           $buildPath = "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity\Builds\Local\webgl_1.1\index.html"
           if (!(Test-Path $buildPath)) {
