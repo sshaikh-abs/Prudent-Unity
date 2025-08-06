@@ -26,7 +26,7 @@ jobs:
 
       # Step 3: Verify Brotli build exists
       - name: Verify Build Output
-        shell: pwsh
+        shell: powershell
         run: |
           if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
             echo "ERROR: Unity did not produce a new Brotli build!"
@@ -35,6 +35,7 @@ jobs:
           } else {
             echo "Brotli build verified successfully."
           }
+
 
       # Step 4: Zip the build
       - name: Zip WebGL Build
