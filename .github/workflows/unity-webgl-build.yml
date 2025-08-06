@@ -1,17 +1,18 @@
-name: Unity WebGL Build (Local)
+name: Unity WebGL Local Build
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   build-webgl:
     runs-on: self-hosted
+
     steps:
-      # 1. Checkout repository without cleaning Library
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          clean: false
+      # 1. Check runner connectivity and log Unity version
+      - name: Verify Unity Installation
+        run: |
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -version
+        shell: powershell
 
       # 2. Run Unity to create a Local WebGL build
       - name: Build WebGL (Local)
@@ -20,14 +21,14 @@ jobs:
             -quit `
             -batchmode `
             -nographics `
-            -projectPath "$env:GITHUB_WORKSPACE\Prudent-Unity" `
+            -projectPath "C:\Unityprojects\abs-unity" `
             -executeMethod BuildScript.BuildWebGLLocal `
-            -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
+            -logFile "C:\Unityprojects\abs-unity\build.log"
         shell: powershell
 
       # 3. Upload the generated WebGL build as an artifact
-      - name: Upload WebGL Build
+      - name: Upload WebGL Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: WebGL_Local_Build
-          path: Prudent-Unity/Builds/Local/webgl_1.1
+          path: C:/Unityprojects/abs-unity/Builds/Local/webgl_1.1
