@@ -1,53 +1,50 @@
 name: Unity WebGL Brotli Build
 
 on:
-  workflow_dispatch: # Manual trigger only
+  # Manual trigger only
+  workflow_dispatch:
 
 jobs:
   build-webgl:
     runs-on: self-hosted
 
     steps:
-      # 1. Checkout repo
-      - name: Checkout Repository
+      # Step 1: Checkout repository but keep existing files (Library etc.)
+      - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          clean: false
 
-      # 2. Clean Unity cache (fresh build)
-      - name: Clean Unity Cache
-        run: |
-          Remove-Item -Recurse -Force "Library" -ErrorAction Ignore
-          Remove-Item -Recurse -Force "Temp" -ErrorAction Ignore
-          Remove-Item -Recurse -Force "Builds\BR\webgl_1.1" -ErrorAction Ignore
-        working-directory: ${{ github.workspace }}
-
-      # 3. Run Unity Build (Brotli Production)
+      # Step 2: Build WebGL (Brotli)
       - name: Build WebGL (Brotli)
         run: >
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
           -quit -batchmode -nographics
-          -projectPath "${{ github.workspace }}"
+          -projectPath "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity"
           -executeMethod BuildScript.BuildWebGLBR
-          -logFile "${{ github.workspace }}\build.log"
+          -logFile "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\build.log"
 
-      # 4. Verify Build
-      - name: Verify Brotli Build
+      # Step 3: Verify Brotli build exists
+      - name: Verify Build Output
+        shell: pwsh
         run: |
-          if (!(Test-Path "${{ github.workspace }}\Builds\BR\webgl_1.1\index.html")) {
+          if (!(Test-Path "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html")) {
             echo "ERROR: Unity did not produce a new Brotli build!"
-            Get-Content "${{ github.workspace }}\build.log"
+            Get-Content "$env:GITHUB_WORKSPACE\build.log"
             exit 1
           } else {
             echo "Brotli build verified successfully."
           }
 
-      # 5. Zip and Upload Artifact
-      - name: Zip WebGL BR Build
-        run: |
-          Compress-Archive -Path "Builds\BR\webgl_1.1\*" `
-          -DestinationPath "WebGLBuild.zip" -Force
+      # Step 4: Zip the build
+      - name: Zip WebGL Build
+        run: >
+          Compress-Archive -Path "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\Builds\BR\*" 
+          -DestinationPath "C:\GitHubRunner\actions-runner\_work\Prudent-Unity\Prudent-Unity\WebGLBuild.zip" -Force
 
+      # Step 5: Upload the artifact
       - name: Upload WebGL Build Zip
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild-Brotli
-          path: WebGLBuild.zip
+          path: "C:\\GitHubRunner\\actions-runner\\_work\\Prudent-Unity\\Prudent-Unity\\WebGLBuild.zip"
