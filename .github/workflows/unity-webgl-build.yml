@@ -1,52 +1,54 @@
-name: Build Unity Local WebGL
+name: Unity WebGL Build
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches:
+      - main  # Trigger on main branch push
 
 jobs:
-  build-webgl-local:
+  build-webgl:
     runs-on: self-hosted
-    timeout-minutes: 60
 
     steps:
-      # 1. Checkout repository without cleaning Library
+      # 1. Checkout repository without cleaning Library (for caching)
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           clean: false
 
-      # 2. Verify Unity installation
-      - name: Check Unity Version
+      # 2. Display Unity version (verify runner uses correct version)
+      - name: Display Unity Version
         shell: powershell
         run: |
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" --version
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -version
 
-      # 3. Run Unity Local WebGL build
+      # 3. Build Local WebGL (Normal)
       - name: Build Local WebGL
         shell: powershell
         run: |
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
             -quit -batchmode -nographics `
-            -projectPath "$env:GITHUB_WORKSPACE\Prudent-Unity" `
+            -projectPath "$env:GITHUB_WORKSPACE" `
             -executeMethod BuildScript.BuildWebGLLocal `
-            -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
+            -logFile "$env:GITHUB_WORKSPACE\build.log"
 
-      # 4. Verify that the build succeeded
+      # 4. Verify Local WebGL build
       - name: Verify Local WebGL Build
         shell: powershell
         run: |
-          $buildPath = "$env:GITHUB_WORKSPACE\Prudent-Unity\Builds\Local\webgl_1.1\index.html"
+          $buildPath = "$env:GITHUB_WORKSPACE\Builds\Local\webgl_1.1\index.html"
           if (!(Test-Path $buildPath)) {
             Write-Host "ERROR: Unity did not produce a Local WebGL build!"
-            Get-Content "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
+            Get-Content "$env:GITHUB_WORKSPACE\build.log"
             exit 1
           } else {
             Write-Host "Local WebGL build verified successfully."
           }
 
-      # 5. Upload artifact for download (optional)
-      - name: Upload Local WebGL Build
+      # 5. Upload build as artifact (optional)
+      - name: Upload Local WebGL Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: LocalWebGLBuild
-          path: Prudent-Unity/Builds/Local/webgl_1.1
+          name: Local-WebGL-Build
+          path: Builds/Local/webgl_1.1
