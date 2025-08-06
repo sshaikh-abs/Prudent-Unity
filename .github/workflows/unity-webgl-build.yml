@@ -1,54 +1,47 @@
-name: Unity WebGL Brotli Build
+name: Unity WebGL Local Build
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Enables the manual run button in GitHub
 
 jobs:
-  build-webgl-br:
-    runs-on: [self-hosted, Windows, X64]
-
+  build-webgl:
+    runs-on: self-hosted
     steps:
-    # 1. Checkout repository without cleaning Library
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        clean: false
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          clean: false # Keeps Library folder if exists for faster builds
 
-    # 2. Cache Unity Library (optional)
-    - name: Cache Unity Library
-      uses: actions/cache@v4
-      with:
-        path: Library
-        key: Library-${{ runner.os }}-${{ github.sha }}
-        restore-keys: |
-          Library-${{ runner.os }}-
+      - name: Check Unity Version
+        shell: pwsh
+        run: |
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" --version
 
-    # 3. Build Unity WebGL with Brotli compression
-    - name: Build Unity WebGL (Brotli)
-      shell: powershell
-      run: |
-        & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
-          -quit -batchmode -nographics `
-          -projectPath "$env:GITHUB_WORKSPACE" `
-          -executeMethod BuildScript.BuildWebGLBR `
-          -logFile "$env:GITHUB_WORKSPACE\build.log"
+      - name: Build Unity Project (Local WebGL)
+        shell: pwsh
+        run: |
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
+            -quit `
+            -batchmode `
+            -nographics `
+            -projectPath "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity" `
+            -executeMethod BuildScript.BuildWebGLLocal `
+            -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity\build.log"
 
-    # 4. Verify Brotli build output
-    - name: Verify Brotli Build
-      shell: powershell
-      run: |
-        $buildPath = "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html"
-        if (!(Test-Path $buildPath)) {
-          Write-Host "ERROR: Unity did not produce a Brotli build!"
-          Get-Content "$env:GITHUB_WORKSPACE\build.log"
-          exit 1
-        } else {
-          Write-Host "Brotli build verified successfully."
-        }
+      - name: Verify WebGL Build
+        shell: pwsh
+        run: |
+          $buildPath = "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity\Builds\Local\webgl_1.1\index.html"
+          if (!(Test-Path $buildPath)) {
+            Write-Host "ERROR: Unity did not produce a Local WebGL build!"
+            Get-Content "$env:GITHUB_WORKSPACE\Prudent-Unity\Prudent-Unity\build.log"
+            exit 1
+          } else {
+            Write-Host "Local WebGL build verified successfully."
+          }
 
-    # 5. Upload Brotli Build as Artifact (use v4)
-    - name: Upload Brotli Build Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: webgl-brotli-build
-        path: Builds/BR/webgl_1.1
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WebGL-Local-Build
+          path: Prudent-Unity/Prudent-Unity/Builds/Local
