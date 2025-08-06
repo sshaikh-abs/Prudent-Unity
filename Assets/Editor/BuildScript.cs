@@ -5,7 +5,6 @@ using System.IO;
 
 public static class BuildScript
 {
-    // Versioned folder for WebGL Brotli build
     private static readonly string buildVersion = "webgl_1.1";
     private static readonly string buildPath = "Builds/BR/" + buildVersion;
 
@@ -14,16 +13,13 @@ public static class BuildScript
     {
         Debug.Log("=== Starting WebGL Brotli Build ===");
 
-        // 1. Refresh and Clear Temp
-        AssetDatabase.Refresh();
-        string tempPath = Path.Combine(Directory.GetCurrentDirectory(), "Temp");
-        if (Directory.Exists(tempPath))
-        {
-            Directory.Delete(tempPath, true);
-            Debug.Log("Temp folder cleared before build.");
-        }
+        // 1. Ensure fresh temp folders
+        CleanTempFolders();
 
+        // 2. Apply production settings
         ApplyWebGLSettingsBR();
+
+        // 3. Ensure build folder is clean
         PrepareBuildFolder(buildPath);
 
         string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update if needed
@@ -33,44 +29,31 @@ public static class BuildScript
             scenes = scenes,
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
-            options = BuildOptions.StrictMode | BuildOptions.CleanBuildCache
+            // Force clean build to avoid Bee incremental issues
+            options = BuildOptions.CleanBuildCache
         };
 
         BuildReport report = BuildPipeline.BuildPlayer(options);
 
         if (report.summary.result == BuildResult.Succeeded)
-        {
             Debug.Log($"=== WebGL Brotli Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
-
-            // Remove any leftover .unityweb files to keep only .br
-            foreach (var file in Directory.GetFiles(buildPath, "*.unityweb", SearchOption.AllDirectories))
-            {
-                File.Delete(file);
-                Debug.Log("Deleted leftover .unityweb: " + file);
-            }
-        }
         else
-        {
             Debug.LogError("=== WebGL Brotli Build Failed ===");
-        }
     }
 
     private static void ApplyWebGLSettingsBR()
     {
-        // Force Brotli compression
         PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
-
-        // Disable fallback to .unityweb
         PlayerSettings.WebGL.decompressionFallback = false;
 
-        // Optimize IL2CPP for smallest output (size with LTO)
         EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "size");
         PlayerSettings.stripEngineCode = true;
-
-        // Disable development options for production
         EditorUserBuildSettings.development = false;
         EditorUserBuildSettings.connectProfiler = false;
         EditorUserBuildSettings.allowDebugging = false;
+
+        // Disable burst on CI to avoid file locking issues
+        Unity.Burst.BurstCompiler.Options.EnableBurstCompilation = false;
 
         Debug.Log("Applied Brotli + LTO settings (.br output only)");
     }
@@ -86,6 +69,26 @@ public static class BuildScript
         string parentDir = Path.GetDirectoryName(path);
         if (!Directory.Exists(parentDir))
             Directory.CreateDirectory(parentDir);
+    }
+
+    private static void CleanTempFolders()
+    {
+        string[] dirs = { "Library/Bee", "Library/PlayerDataCache", "Temp" };
+        foreach (string dir in dirs)
+        {
+            if (Directory.Exists(dir))
+            {
+                try
+                {
+                    Directory.Delete(dir, true);
+                    Debug.Log("Deleted: " + dir);
+                }
+                catch (IOException e)
+                {
+                    Debug.LogWarning($"Could not delete {dir}: {e.Message}");
+                }
+            }
+        }
     }
 }
 
