@@ -1,36 +1,54 @@
-name: Build WebGL Brotli
+name: Unity WebGL Brotli Build
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: self-hosted
+  build-webgl-br:
+    runs-on: [self-hosted, Windows, X64]
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          clean: false  # Keep Library folder
+    # 1. Checkout repository without cleaning the Library folder
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        clean: false
 
-      - name: Build Unity WebGL (Brotli)
-        shell: powershell
-        run: |
-          "Starting Unity build..."
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
-            -quit -batchmode -nographics `
-            -projectPath "$env:GITHUB_WORKSPACE\Prudent-Unity" `
-            -executeMethod BuildScript.BuildWebGLBR `
-            -logFile "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
+    # 2. Cache Library folder to speed up builds (optional but recommended)
+    - name: Cache Unity Library
+      uses: actions/cache@v3
+      with:
+        path: Library
+        key: Library-${{ runner.os }}-${{ github.sha }}
+        restore-keys: |
+          Library-${{ runner.os }}-
 
-      - name: Verify Brotli Build
-        shell: powershell
-        run: |
-          $buildPath = "$env:GITHUB_WORKSPACE\Prudent-Unity\Builds\BR\webgl_1.1\index.html"
-          if (!(Test-Path $buildPath)) {
-            Write-Host "ERROR: Unity did not produce a Brotli build!"
-            Get-Content "$env:GITHUB_WORKSPACE\Prudent-Unity\build.log"
-            exit 1
-          } else {
-            Write-Host "Brotli build verified successfully."
-          }
+    # 3. Build Unity WebGL with Brotli compression
+    - name: Build Unity WebGL (Brotli)
+      shell: powershell
+      run: |
+        & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
+          -quit -batchmode -nographics `
+          -projectPath "$env:GITHUB_WORKSPACE" `
+          -executeMethod BuildScript.BuildWebGLBR `
+          -logFile "$env:GITHUB_WORKSPACE\build.log"
 
+    # 4. Verify Brotli build output
+    - name: Verify Brotli Build
+      shell: powershell
+      run: |
+        $buildPath = "$env:GITHUB_WORKSPACE\Builds\BR\webgl_1.1\index.html"
+        if (!(Test-Path $buildPath)) {
+          Write-Host "ERROR: Unity did not produce a Brotli build!"
+          Get-Content "$env:GITHUB_WORKSPACE\build.log"
+          exit 1
+        } else {
+          Write-Host "Brotli build verified successfully."
+        }
+
+    # 5. Upload Brotli build as artifact (optional)
+    - name: Upload Brotli Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: webgl-brotli-build
+        path: Builds/BR/webgl_1.1
