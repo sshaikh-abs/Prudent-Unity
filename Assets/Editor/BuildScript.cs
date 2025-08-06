@@ -14,6 +14,15 @@ public static class BuildScript
     {
         Debug.Log("=== Starting WebGL Brotli Build ===");
 
+        // 1. Refresh and Clear Temp
+        AssetDatabase.Refresh();
+        string tempPath = Path.Combine(Directory.GetCurrentDirectory(), "Temp");
+        if (Directory.Exists(tempPath))
+        {
+            Directory.Delete(tempPath, true);
+            Debug.Log("Temp folder cleared before build.");
+        }
+
         ApplyWebGLSettingsBR();
         PrepareBuildFolder(buildPath);
 
@@ -24,15 +33,26 @@ public static class BuildScript
             scenes = scenes,
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
-            options = BuildOptions.None
+            options = BuildOptions.StrictMode | BuildOptions.CleanBuildCache
         };
 
         BuildReport report = BuildPipeline.BuildPlayer(options);
 
         if (report.summary.result == BuildResult.Succeeded)
+        {
             Debug.Log($"=== WebGL Brotli Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
+
+            // Remove any leftover .unityweb files to keep only .br
+            foreach (var file in Directory.GetFiles(buildPath, "*.unityweb", SearchOption.AllDirectories))
+            {
+                File.Delete(file);
+                Debug.Log("Deleted leftover .unityweb: " + file);
+            }
+        }
         else
+        {
             Debug.LogError("=== WebGL Brotli Build Failed ===");
+        }
     }
 
     private static void ApplyWebGLSettingsBR()
@@ -47,7 +67,7 @@ public static class BuildScript
         EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "size");
         PlayerSettings.stripEngineCode = true;
 
-        // Make sure to strip debug info for production
+        // Disable development options for production
         EditorUserBuildSettings.development = false;
         EditorUserBuildSettings.connectProfiler = false;
         EditorUserBuildSettings.allowDebugging = false;
@@ -68,9 +88,6 @@ public static class BuildScript
             Directory.CreateDirectory(parentDir);
     }
 }
-
-
-
 
 
 
