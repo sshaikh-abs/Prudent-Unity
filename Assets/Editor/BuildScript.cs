@@ -5,25 +5,32 @@ using System.IO;
 
 public static class BuildScript
 {
-    private static readonly string buildVersion = "webgl_1.1";
-    private static readonly string buildPath = "Builds/BR/" + buildVersion;
+    // Local build path (used for GitHub & local tests)
+    private static readonly string localBuildVersion = "webgl_local";
+    private static readonly string localBuildPath = "Builds/LocalWebGL/" + localBuildVersion;
 
-    public static void BuildWebGLBR()
+    // Brotli build path (for production manual builds)
+    private static readonly string brBuildVersion = "webgl_1.1";
+    private static readonly string brBuildPath = "Builds/BR/" + brBuildVersion;
+
+    // -------------------------
+    // LOCAL WEBGL BUILD (For GitHub / Test)
+    // -------------------------
+    [MenuItem("Build/Build WebGL - Local")]
+    public static void BuildWebGLLocal()
     {
-        Debug.Log("=== Starting WebGL Brotli Build ===");
+        Debug.Log("=== Starting Local WebGL Build (Gzip) ===");
 
-        // Optional: Clean old build only
-        PrepareBuildFolder(buildPath);
-
-        // Apply Brotli settings
-        ApplyWebGLSettingsBR();
+        CleanTempFolders(false); // Minimal clean for CI
+        ApplyWebGLSettingsLocal();
+        PrepareBuildFolder(localBuildPath);
 
         string[] scenes = { "Assets/Scenes/MainScene.unity" };
 
         BuildPlayerOptions options = new BuildPlayerOptions
         {
             scenes = scenes,
-            locationPathName = buildPath,
+            locationPathName = localBuildPath,
             target = BuildTarget.WebGL,
             options = BuildOptions.None
         };
@@ -31,9 +38,51 @@ public static class BuildScript
         BuildReport report = BuildPipeline.BuildPlayer(options);
 
         if (report.summary.result == BuildResult.Succeeded)
-            Debug.Log($"=== WebGL Brotli Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
+            Debug.Log($"=== Local WebGL Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
         else
-            Debug.LogError("=== WebGL Brotli Build Failed ===");
+            Debug.LogError("=== Local WebGL Build Failed ===");
+    }
+
+    private static void ApplyWebGLSettingsLocal()
+    {
+        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Gzip;
+        PlayerSettings.WebGL.decompressionFallback = true;
+
+        EditorUserBuildSettings.development = false;
+        EditorUserBuildSettings.connectProfiler = false;
+        EditorUserBuildSettings.allowDebugging = false;
+
+        Debug.Log("Applied local WebGL settings (Gzip + decompression fallback).");
+    }
+
+    // -------------------------
+    // BROTLI WEBGL BUILD (Production manual only)
+    // -------------------------
+    [MenuItem("Build/Build WebGL - Brotli (Production)")]
+    public static void BuildWebGLBR()
+    {
+        Debug.Log("=== Starting WebGL Brotli Build (Production) ===");
+
+        CleanTempFolders(true); // Full clean to avoid Bee issues
+        ApplyWebGLSettingsBR();
+        PrepareBuildFolder(brBuildPath);
+
+        string[] scenes = { "Assets/Scenes/MainScene.unity" };
+
+        BuildPlayerOptions options = new BuildPlayerOptions
+        {
+            scenes = scenes,
+            locationPathName = brBuildPath,
+            target = BuildTarget.WebGL,
+            options = BuildOptions.CleanBuildCache
+        };
+
+        BuildReport report = BuildPipeline.BuildPlayer(options);
+
+        if (report.summary.result == BuildResult.Succeeded)
+            Debug.Log($"=== Brotli WebGL Build Succeeded! Size: {report.summary.totalSize / 1024 / 1024} MB ===");
+        else
+            Debug.LogError("=== Brotli WebGL Build Failed ===");
     }
 
     private static void ApplyWebGLSettingsBR()
@@ -41,28 +90,57 @@ public static class BuildScript
         PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
         PlayerSettings.WebGL.decompressionFallback = false;
 
+        // Production optimizations
         EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "size");
         PlayerSettings.stripEngineCode = true;
+
         EditorUserBuildSettings.development = false;
         EditorUserBuildSettings.connectProfiler = false;
         EditorUserBuildSettings.allowDebugging = false;
 
-        Debug.Log("Applied Brotli + Optimized settings.");
+        Debug.Log("Applied Brotli production settings.");
     }
 
+    // -------------------------
+    // UTILS
+    // -------------------------
     private static void PrepareBuildFolder(string path)
     {
         if (Directory.Exists(path))
+        {
             Directory.Delete(path, true);
+            Debug.Log("Old build folder deleted: " + path);
+        }
 
         string parentDir = Path.GetDirectoryName(path);
         if (!Directory.Exists(parentDir))
             Directory.CreateDirectory(parentDir);
     }
+
+    private static void CleanTempFolders(bool fullClean)
+    {
+        // Full clean only for Brotli to avoid Bee incremental bugs
+        string[] dirs = fullClean
+            ? new string[] { "Library/Bee", "Library/PlayerDataCache", "Temp" }
+            : new string[] { "Temp" };
+
+        foreach (string dir in dirs)
+        {
+            if (Directory.Exists(dir))
+            {
+                try
+                {
+                    Directory.Delete(dir, true);
+                    Debug.Log("Deleted: " + dir);
+                }
+                catch (IOException e)
+                {
+                    Debug.LogWarning($"Could not delete {dir}: {e.Message}");
+                }
+            }
+        }
+    }
 }
-
-
-
 
 
 
