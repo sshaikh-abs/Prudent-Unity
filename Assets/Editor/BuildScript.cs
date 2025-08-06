@@ -13,13 +13,7 @@ public static class BuildScript
     {
         Debug.Log("=== Starting WebGL Brotli Build ===");
 
-        // 1. Ensure fresh temp folders
-        CleanTempFolders();
-
-        // 2. Apply production settings
         ApplyWebGLSettingsBR();
-
-        // 3. Ensure build folder is clean
         PrepareBuildFolder(buildPath);
 
         string[] scenes = { "Assets/Scenes/MainScene.unity" }; // Update if needed
@@ -29,8 +23,7 @@ public static class BuildScript
             scenes = scenes,
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
-            // Force clean build to avoid Bee incremental issues
-            options = BuildOptions.CleanBuildCache
+            options = BuildOptions.None // Avoid CleanBuildCache to keep CI stable
         };
 
         BuildReport report = BuildPipeline.BuildPlayer(options);
@@ -52,8 +45,10 @@ public static class BuildScript
         EditorUserBuildSettings.connectProfiler = false;
         EditorUserBuildSettings.allowDebugging = false;
 
-        // Disable burst on CI to avoid file locking issues
+        // Optional: disable burst safely on CI
+#if UNITY_BURST
         Unity.Burst.BurstCompiler.Options.EnableBurstCompilation = false;
+#endif
 
         Debug.Log("Applied Brotli + LTO settings (.br output only)");
     }
@@ -70,29 +65,7 @@ public static class BuildScript
         if (!Directory.Exists(parentDir))
             Directory.CreateDirectory(parentDir);
     }
-
-    private static void CleanTempFolders()
-    {
-        string[] dirs = { "Library/Bee", "Library/PlayerDataCache", "Temp" };
-        foreach (string dir in dirs)
-        {
-            if (Directory.Exists(dir))
-            {
-                try
-                {
-                    Directory.Delete(dir, true);
-                    Debug.Log("Deleted: " + dir);
-                }
-                catch (IOException e)
-                {
-                    Debug.LogWarning($"Could not delete {dir}: {e.Message}");
-                }
-            }
-        }
-    }
 }
-
-
 
 
 
