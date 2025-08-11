@@ -19,7 +19,7 @@ jobs:
         run: |
           & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -quit -batchmode -nographics  -projectPath "C:\Unityprojects\abs-unity" -executeMethod BuildScript.BuildWebGLLocal -logFile "C:\Unityprojects\abs-unity\build.log"
    
-        shell: pwsh
+        shell: powershell
 
       # 3. Upload the WebGL build folder as an artifact
       - name: Upload WebGL Local Build
