@@ -177,6 +177,98 @@
 
 
 
+//using UnityEditor;
+//using UnityEngine;
+//using System.Diagnostics;
+//using System.IO;
+//using System;
+
+//public class BuildScript
+//{
+//    private static readonly string buildVersion = "webgl_1.1";
+
+//    [MenuItem("Build/Build WebGL - Local (Fast)")]
+//    public static void BuildWebGLLocal()
+//    {
+//        ApplyWebGLSettingsLocal();
+
+//        string buildPath = @"C:\Unityprojects\abs-unity\Builds\Local\" + buildVersion;
+//        Build(buildPath);
+
+//        UnityEngine.Debug.Log("Local WebGL Build Completed");
+//    }
+
+//    [MenuItem("Build/Build WebGL - BR (Deployement)")]
+//    public static void BuildWebGLBR()
+//    {
+//        ApplyWebGLSettingsBR();
+
+//        string buildPath = @"C:\Unityprojects\abs-unity\Builds\BR\" + buildVersion;
+//        Build(buildPath);
+
+//        UnityEngine.Debug.Log("BR WebGL Build Completed");
+
+//        // Optional Git push
+//        Process.Start("bash", "Scripts/PushWebGLToGit.sh");
+//    }
+
+//    private static void Build(string buildPath)
+//    {
+//        if (Directory.Exists(buildPath))
+//        {
+//            Directory.Delete(buildPath, true);
+//            UnityEngine.Debug.Log("Old build folder deleted: " + buildPath);
+//        }
+
+//        string parentDir = Path.GetDirectoryName(buildPath);
+//        if (!Directory.Exists(parentDir))
+//            Directory.CreateDirectory(parentDir);
+
+//        BuildPlayerOptions options = new BuildPlayerOptions
+//        {
+//            scenes = new[] { "Assets/Scenes/MainScene.unity" }, // Update your actual scene path if needed
+//            locationPathName = buildPath,
+//            target = BuildTarget.WebGL,
+//            options = BuildOptions.None
+//        };
+
+//        BuildPipeline.BuildPlayer(options);
+//    }
+
+//    private static void ApplyWebGLSettingsLocal()
+//    {
+//        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
+//        SetIl2CppCodeGeneration("FasterRuntime"); // Shorter Build Time
+//        UnityEngine.Debug.Log("Applied Local Build Settings");
+//    }
+
+//    private static void ApplyWebGLSettingsBR()
+//    {
+//        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
+//        SetIl2CppCodeGeneration("OptimizeSizeWithLTO"); // Disk Size with LTO
+//        UnityEngine.Debug.Log("Applied BR Build Settings");
+//    }
+
+//    private static void SetIl2CppCodeGeneration(string enumName)
+//    {
+//        var enumType = typeof(PlayerSettings).Assembly.GetType("UnityEditor.Il2CppCodeGenerationOption");
+//        var method = typeof(PlayerSettings).GetMethod("SetIl2CppCodeGeneration", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+
+//        if (enumType != null && method != null)
+//        {
+//            var enumValue = Enum.Parse(enumType, enumName);
+//            method.Invoke(null, new object[] { BuildTargetGroup.WebGL, enumValue });
+//            UnityEngine.Debug.Log($"IL2CPP Code Generation set to: {enumName}");
+//        }
+//        else
+//        {
+//            UnityEngine.Debug.LogWarning("Unable to set IL2CPP Code Generation. Unity version may not support reflection access.");
+//        }
+//    }
+//}
+
+
+
 using UnityEditor;
 using UnityEngine;
 using System.Diagnostics;
@@ -187,68 +279,73 @@ public class BuildScript
 {
     private static readonly string buildVersion = "webgl_1.1";
 
+    // =============== LOCAL BUILD (Simple) ===============
     [MenuItem("Build/Build WebGL - Local (Fast)")]
     public static void BuildWebGLLocal()
     {
-        ApplyWebGLSettingsLocal();
+        // Simple settings for CI/GitHub
+        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
 
         string buildPath = @"C:\Unityprojects\abs-unity\Builds\Local\" + buildVersion;
-        Build(buildPath);
+        BuildSimple(buildPath);
 
-        UnityEngine.Debug.Log("Local WebGL Build Completed");
+        Debug.Log("Local WebGL Build Completed");
     }
 
-    [MenuItem("Build/Build WebGL - BR (Deployement)")]
+    // =============== BROTLI BUILD (Optimized) ===============
+    [MenuItem("Build/Build WebGL - BR (Deployment)")]
     public static void BuildWebGLBR()
     {
-        ApplyWebGLSettingsBR();
+        // Keep Brotli + LTO settings
+        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
+        SetIl2CppCodeGeneration("OptimizeSizeWithLTO");
 
         string buildPath = @"C:\Unityprojects\abs-unity\Builds\BR\" + buildVersion;
-        Build(buildPath);
+        BuildSimple(buildPath);
 
-        UnityEngine.Debug.Log("BR WebGL Build Completed");
+        Debug.Log("BR WebGL Build Completed");
 
-        // Optional Git push
-        Process.Start("bash", "Scripts/PushWebGLToGit.sh");
+        // Optional: push to Git
+        // Process.Start("bash", "Scripts/PushWebGLToGit.sh");
     }
 
-    private static void Build(string buildPath)
+    // Shared build method
+    private static void BuildSimple(string buildPath)
     {
+        Debug.Log("Starting WebGL build to: " + buildPath);
+
         if (Directory.Exists(buildPath))
         {
             Directory.Delete(buildPath, true);
-            UnityEngine.Debug.Log("Old build folder deleted: " + buildPath);
+            Debug.Log("Old build folder deleted: " + buildPath);
         }
 
-        string parentDir = Path.GetDirectoryName(buildPath);
-        if (!Directory.Exists(parentDir))
-            Directory.CreateDirectory(parentDir);
+        Directory.CreateDirectory(buildPath);
 
-        BuildPlayerOptions options = new BuildPlayerOptions
+        string scenePath = "Assets/Scenes/MainScene.unity";
+        if (!File.Exists(scenePath))
         {
-            scenes = new[] { "Assets/Scenes/MainScene.unity" }, // Update your actual scene path if needed
+            Debug.LogError("Scene not found: " + scenePath);
+            return;
+        }
+
+        var options = new BuildPlayerOptions
+        {
+            scenes = new[] { scenePath },
             locationPathName = buildPath,
             target = BuildTarget.WebGL,
             options = BuildOptions.None
         };
 
-        BuildPipeline.BuildPlayer(options);
+        var report = BuildPipeline.BuildPlayer(options);
+
+        if (report.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded)
+            Debug.Log("Build succeeded: " + report.summary.totalSize + " bytes");
+        else
+            Debug.LogError("Build failed: " + report.summary.result);
     }
 
-    private static void ApplyWebGLSettingsLocal()
-    {
-        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
-        SetIl2CppCodeGeneration("FasterRuntime"); // Shorter Build Time
-        UnityEngine.Debug.Log("Applied Local Build Settings");
-    }
-
-    private static void ApplyWebGLSettingsBR()
-    {
-        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Brotli;
-        SetIl2CppCodeGeneration("OptimizeSizeWithLTO"); // Disk Size with LTO
-        UnityEngine.Debug.Log("Applied BR Build Settings");
-    }
-
+    // Only used for Brotli builds
     private static void SetIl2CppCodeGeneration(string enumName)
     {
         var enumType = typeof(PlayerSettings).Assembly.GetType("UnityEditor.Il2CppCodeGenerationOption");
@@ -258,11 +355,12 @@ public class BuildScript
         {
             var enumValue = Enum.Parse(enumType, enumName);
             method.Invoke(null, new object[] { BuildTargetGroup.WebGL, enumValue });
-            UnityEngine.Debug.Log($"IL2CPP Code Generation set to: {enumName}");
+            Debug.Log($"IL2CPP Code Generation set to: {enumName}");
         }
         else
         {
-            UnityEngine.Debug.LogWarning("Unable to set IL2CPP Code Generation. Unity version may not support reflection access.");
+            Debug.LogWarning("Unable to set IL2CPP Code Generation. Unity version may not support reflection access.");
         }
     }
 }
+
