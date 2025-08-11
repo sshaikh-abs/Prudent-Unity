@@ -1,34 +1,29 @@
-name: Unity WebGL Local Build
+name: Unity WebGL Build (Local)
 
 on:
-  workflow_dispatch: # Manual trigger only
+  workflow_dispatch: # Manual trigger from GitHub UI
 
 jobs:
-  build-webgl:
+  build-webgl-local:
     runs-on: self-hosted
 
     steps:
-      # 1. Check runner connectivity and log Unity version
-      - name: Verify Unity Installation
-        run: |
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -version
-        shell: powershell
+      # 1. (Optional) Checkout repository if needed for scripts/assets
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          clean: false
 
-      # 2. Run Unity to create a Local WebGL build
+      # 2. Run Unity to build WebGL (Local)
       - name: Build WebGL (Local)
         run: |
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" `
-            -quit `
-            -batchmode `
-            -nographics `
-            -projectPath "C:\Unityprojects\abs-unity" `
-            -executeMethod BuildScript.BuildWebGLLocal `
-            -logFile "C:\Unityprojects\abs-unity\build.log"
-        shell: powershell
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -quit -batchmode -nographics  -projectPath "C:\Unityprojects\abs-unity" -executeMethod BuildScript.BuildWebGLLocal -logFile "C:\Unity Projects\abs-unity\build.log"
+   
+        shell: pwsh
 
-      # 3. Upload the generated WebGL build as an artifact
-      - name: Upload WebGL Build Artifact
+      # 3. Upload the WebGL build folder as an artifact
+      - name: Upload WebGL Local Build
         uses: actions/upload-artifact@v4
         with:
           name: WebGL_Local_Build
-          path: C:/Unityprojects/abs-unity/Builds/Local/webgl_1.1
+          path: "C:/Unity Projects/abs-unity/Builds/Local/webgl_1.1"
