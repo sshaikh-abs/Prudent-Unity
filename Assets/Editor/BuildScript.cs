@@ -361,18 +361,24 @@
 
 
 using UnityEditor;
+using System.IO;
 
-public class BuildWebGL
+public class BuildScript
 {
     public static void BuildWebGLLocal()
     {
-        string buildPath = @"C:\Unityprojects\abs-unity\Builds\Local\";
+        string buildPath = "Builds/Local/webgl_1.1";
 
-        string[] scenes = new string[]
-        {
-            @"C:\Unity Projects\abs-unity\Assets\Scenes\MainScene.unity"
-        };
+        if (!Directory.Exists(buildPath))
+            Directory.CreateDirectory(buildPath);
 
-        BuildPipeline.BuildPlayer(scenes, buildPath, BuildTarget.WebGL, BuildOptions.None);
+        BuildPipeline.BuildPlayer(
+            new[] { "Assets/Scenes/SampleScene.unity" }, // Change scene path if needed
+            buildPath,
+            BuildTarget.WebGL,
+            BuildOptions.None
+        );
+
+        UnityEngine.Debug.Log("Local WebGL build complete: " + buildPath);
     }
 }
