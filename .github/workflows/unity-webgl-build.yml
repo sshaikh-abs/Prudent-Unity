@@ -17,7 +17,7 @@ jobs:
       # 2. Run Unity to build WebGL (Local)
       - name: Build WebGL (Local)
         run: |
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -quit -batchmode -nographics  -projectPath "C:\Unityprojects\abs-unity" -executeMethod BuildScript.BuildWebGLLocal -logFile "C:\Unity Projects\abs-unity\build.log"
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" -quit -batchmode -nographics  -projectPath "C:\Unityprojects\abs-unity" -executeMethod BuildScript.BuildWebGLLocal -logFile "C:\Unityprojects\abs-unity\build.log"
    
         shell: pwsh
 
@@ -26,4 +26,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: WebGL_Local_Build
-          path: "C:/Unity Projects/abs-unity/Builds/Local/webgl_1.1"
+          path: "C:/Unityprojects/abs-unity/Builds/Local/webgl_1.1"
+
