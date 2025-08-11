@@ -1,39 +1,28 @@
-name: Unity WebGL Local Build
+name: Local WebGL Build
 
 on:
-  workflow_dispatch: # manual trigger
-  push:
-    branches:
-      - main
+  workflow_dispatch: # Run manually
 
 jobs:
   build:
-    name: Build WebGL (Local)
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
-      - name: Cache Unity Library
-        uses: actions/cache@v3
-        with:
-          path: Library
-          key: Library-${{ runner.os }}-${{ hashFiles('**/Packages/packages-lock.json') }}
-          restore-keys: |
-            Library-${{ runner.os }}-
+      # Step 1: Build WebGL using Unity directly
+      - name: Build WebGL
+        run: >
+          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
+          -quit -batchmode -nographics
+          -projectPath "${{ github.workspace }}"
+          -executeMethod BuildScript.BuildWebGLLocal
+          -logFile "${{ github.workspace }}\build.log"
 
-      - name: Unity - Builder
-        uses: game-ci/unity-builder@v4
-        with:
-          unityVersion: 6000.0.37f1
-          targetPlatform: WebGL
-          buildMethod: BuildScript.BuildWebGLLocal
-
-      - name: Upload WebGL Build
+      # Step 2: Upload build as artifact
+      - name: Upload WebGL build
         uses: actions/upload-artifact@v4
         with:
-          name: WebGL-Local-Build
+          name: Local-WebGL-Build
           path: Builds/Local/webgl_1.1
