@@ -1,40 +1,39 @@
-name: Unity WebGL Build
+name: Unity WebGL Local Build
 
 on:
-  # Manual trigger only (Run workflow button)
-  workflow_dispatch:
+  workflow_dispatch: # manual trigger
+  push:
+    branches:
+      - main
 
 jobs:
-  build-webgl:
-    runs-on: self-hosted
+  build:
+    name: Build WebGL (Local)
+    runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
 
-      # Step 2: Build WebGL using Unity
-      - name: Build WebGL
-        run: >
-          & "C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe"
-          -quit -batchmode -nographics
-          -projectPath "C:\Unityprojects\abs-unity"
-          -executeMethod BuildScript.BuildWebGLLocal
-          -logFile "C:\Unityprojects\abs-unity\build.log"
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ runner.os }}-${{ hashFiles('**/Packages/packages-lock.json') }}
+          restore-keys: |
+            Library-${{ runner.os }}-
 
-      # Step 3: Zip the WebGL Build folder
-      - name: Zip WebGL Build
-        run: >
-          Compress-Archive -Path "C:\Unityprojects\abs-unity\Builds\Local\*" 
-          -DestinationPath "C:\Unityprojects\abs-unity\WebGLBuild.zip" -Force
+      - name: Unity - Builder
+        uses: game-ci/unity-builder@v4
+        with:
+          unityVersion: 6000.0.37f1
+          targetPlatform: WebGL
+          buildMethod: BuildScript.BuildWebGLLocal
 
-      # Step 4: Debug step to verify zip exists
-      - name: Debug Check Files
-        run: dir "C:\Unityprojects\abs-unity"
-
-      # Step 5: Upload the zipped WebGL Build as artifact
-      - name: Upload WebGL Build Zip
+      - name: Upload WebGL Build
         uses: actions/upload-artifact@v4
         with:
-          name: WebGLBuild
-          path: "C:\\Unityprojects\\abs-unity\\WebGLBuild.zip"
+          name: WebGL-Local-Build
+          path: Builds/Local/webgl_1.1
